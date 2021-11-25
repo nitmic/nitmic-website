@@ -1,7 +1,7 @@
 ---
 title: "(Hu)go Template Primer"
 date: 2014-04-02
-thumbnail: "img/placeholder.png"
+thumbnail: "logo/logo.png"
 tags:
   - "go"
   - "golang"

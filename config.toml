@@ -26,10 +26,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   pager = true
   post_meta = ["date", "categories"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
+  customCSS = ["css/custom.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
-  image = "logo/logo.png"
+  # image = "logo/logo.png"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
