@@ -90,8 +90,8 @@ body {
 }
 
 .sidebar {
-	-webkit-flex: 1 0 31.66%;
-	flex: 1 0 31.66%;
+	-webkit-flex: 1 0 21.66%;		/* 初期値：31.6% */
+	flex: 1 0 21.66%;				/* 初期値：31.6% */
 	-webkit-order: 2;
 	order: 2;
 	min-width: 0;
