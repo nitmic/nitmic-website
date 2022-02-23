@@ -6,6 +6,7 @@
 	</div>
 	{{- end }}
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
 	<h1>ようこそNITMicホームページへ</h1>
 	<img src="logo/logo.png">
 	<hr>
