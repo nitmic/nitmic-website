@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ .Site.Language.Lang }}">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +44,15 @@
 		{{ template "_internal/google_analytics_async.html" . }}
 		{{- end }}
 	{{- end }}
+
+<!-- swiper js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  
+<!-- swiper css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
 </head>
+
 <body class="body">
 	<div class="container container--outer">
 		{{ partial "header" . }}

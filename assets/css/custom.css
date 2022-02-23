@@ -1328,3 +1328,70 @@ textarea {
 		font-size: .6875rem;
 	}
 }
+
+.top-event-section{
+	width:50vw;
+	height:50vh;
+}
+	.swiper-container {
+	  width: 100%;
+	  height: 100%;
+	}
+	.swiper-slide {
+	  text-align: center;
+	  font-size: 18px;
+	  background: #f7f7f7;
+	  /* Center slide text vertically */
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  -webkit-justify-content: center;
+	  justify-content: center;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  -webkit-align-items: center;
+	  align-items: center;
+	}
+
+
+	.slide1 {
+	  background-image: url("https://source.unsplash.com/random/1920x960?portrait");
+	  background-repeat: no-repeat;
+	  background-position: left top;
+	  background-size: 100% auto;
+	  @media screen and (max-width: 1116px) {
+		background-image: url("https://source.unsplash.com/random/1920x960?portrait");
+		background-size: auto;
+	  }
+	}
+	
+	.slide2 {
+		background-image: url("https://pbs.twimg.com/media/FFH3wkSaMAcV2n5?format=jpg&name=4096x4096");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100% auto;
+		@media screen and (max-width: 1116px) {
+		  background-image: url("https://source.unsplash.com/random/1920x960?portrait");
+		  background-size: auto;
+		}
+	  }
+
+	  .slide3 {
+		background-image: url("https://source.unsplash.com/random/1920x960?portrait");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100% auto;
+		@media screen and (max-width: 1116px) {
+		  background-image: url("https://source.unsplash.com/random/1920x960?portrait");
+		  background-size: auto;
+		}
+	  }
+
+
+	  .swiper {
+		width: 600px;
+		height: 300px;
+	  }

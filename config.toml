@@ -24,7 +24,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   readmore = false # Show "Read more" button in list if true
   authorbox = true
   pager = true
-  post_meta = ["date", "categories"] # Order of post meta information
+  post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
   customCSS = ["css/custom.css"]
 
@@ -37,7 +37,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "recent", "categories", "taglist" , "social"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
