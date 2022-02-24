@@ -412,7 +412,7 @@ select {
 }
 
 .logo__text {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .logo--mixed .logo__item {

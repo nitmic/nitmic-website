@@ -2,7 +2,6 @@
 title: About NITMic
 date: 2014-04-09
 authorbox: true
-sidebar: false
 menu: 
     main:
         name: About

@@ -1,6 +1,18 @@
+
 {{ define "main" }}
 
-    {{- .Content -}}
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">{{ .Title }}</h1>
+		</header>        
+	</article>
+</main>
+
+    <!-- members セクションの _index.md 用のレイアウト-->
+    <!-- セクションじゃなくてシングルページのほうがスマートだと思うが、やり方がわからなかった-->
+
+
 
     {{ range .Site.Data.member }}
         {{ with .Year }}
@@ -11,5 +23,9 @@
         {{ end }}
             <br>
     {{ end }}
+
+
+
+
 
 {{ end }}
