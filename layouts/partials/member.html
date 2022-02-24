@@ -1,13 +1,27 @@
 
 <div class="card">
+    {{ $name := .Name}}
 
-    <a href = "/authors/{{ urlize .Name }}"> {{ .Name }}</a>
+    {{ with .Thumbnail }}
+    <img class="thumbnail" src="{{ . }}">
+    {{ end }}
+    
+    <a href = "/authors/{{ urlize $name }}"> {{ $name }}</a>
 
+    <!--
     {{ range .Tags }}
-        {{ . }}
+        [{{ . }}]
     {{ end }}
 
     {{ .Description | markdownify }}
+
+    {{ with .SNS.Twitter }}
+        <a href="{{ . }}" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+          {{ partial "svg/twitter.svg" }}
+        </a>
+    {{ end }}
+    -->
+
 
 </div>
 

@@ -18,9 +18,11 @@
         {{ with .Year }}
             <h3>{{ . }}入学</h3>
         {{ end }}
+        <div class="cards">
         {{ range .Members }}
             {{ partial "member.html" . }}
         {{ end }}
+        </div>
             <br>
     {{ end }}
 

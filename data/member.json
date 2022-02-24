@@ -2,39 +2,17 @@
   {
     "Year": 2021,
     "Members": [
-        {
-            "Name": "abiten",
-            "Tags": [ "Altseed" ],
-            "Thumbnail": "/images/members/nagaoka.png",
-            "Description": "**ボードゲーム**が好きです<br>情報科学類では珍しく(?)SNSをやっていません"
-        },
-        {
-            "Name": "ネコ",
-            "Thumbnail": "/images/members/Neko.jpg",
-            "Description": "なにもわからない"
-        },
-        {
-          "Name":"Uwe",
-          "Tags":["Altseed", "Unity", "Csharp"],
-          "Thumbnail": "/images/members/uwe_icon.png",
-          "Description": "c++から逃げ続けてはや1年",
-          "SNS": {
-            "Twitter": "https://twitter.com/uwe_silver/",
-            "Github": "https://github.com/UweSilver"
-          }
-        },
-        {
-          "Name":"abes",
-          "Tags": ["Unity"],
-          "Description":"頑張ってC#を書いています。ゲームAIに興味。プログラミングなんもわからんって時、ソースコードを実行して生成されたソースコード(Str型)を実行するみたいな超パワー型のコード考えるよね"
-        },
-        {
-          "Name": "AS",
-          "Tags": [ "Altseed", "CSharp", "" ],
-          "Description": "ゲーム作りは難しいなあ. なんだかなあ.",
-          "SNS": {
-            "Twitter": "https://twitter.com/AS_for_game"
-          }
+      {
+          "Name": "Mass",
+          "Tags": [ "コンポーザー" ],
+          "Thumbnail": "/images/members/image3.png",
+          "Description": "Massです"
+      },
+      {
+          "Name": "kk",
+          "Tags": [ "デザイナー" ],
+          "Thumbnail": "/images/members/image.png",
+          "Description": "kkです"
       }
     ]
   },
@@ -42,293 +20,22 @@
     "Year": 2020,
     "Members": [
       {
-        "Name":"コイケ",
-        "Tags": ["CSharp", "Unity", "ドット絵"],
-        "Thumbnail":"/images/members/RintaroKoike.png",
-        "Description":"ゲームプランナーなりたいなあ",
+        "Name":"dokudami",
+        "Tags": ["プログラマ"],
+        "Thumbnail":"/images/members/dokudami.png",
+        "Description":"dokudamiです",
         "SNS": {
           "Twitter":"https://twitter.com/IhatovCopan2000"
         }
       },
       {
-        "Name":"Wisteria",
-        "Tags": ["Unity", "競プロ"],
-        "Thumbnail":"/images/members/wisteria3hen.jpg",
-        "Description":"ここに書くこと募集中",
+        "Name":"kuru",
+        "Tags": ["プログラマ"],
+        "Thumbnail":"/images/members/image.png",
+        "Description":"kuruです",
         "SNS": {
           "Twitter":"https://twitter.com/goethe_kafka"
         }
-      },
-      {
-        "Name":"ご。",
-        "Tags": ["Csharp"],
-        "Thumbnail":"/images/members/go_icon.jpg",
-        "Description":"ゲームをするかラーメンを食べるかをしたい",
-        "SNS": {
-          "Twitter":"https://twitter.com/tsuGooji"
-        }
-      },
-        {
-        "Name":"ad_mira",
-        "Tags": ["Unity", "blender"],
-        "Thumbnail":"/images/members/nozoki.jpg",
-        "Description":"ケモミミ黒髪羽っこ美少女の比較文化生です",
-        "SNS": {
-          "Twitter":"https://twitter.com/admiraVRC"
-         }
-      }
-    ]
-  },
-  {
-    "Year": 2019,
-    "Members": [
-      {
-        "Name":"MOMO",
-        "Tags": ["C++"],
-        "Description":"Ue4でなんかつくる予定",
-        "SNS": {
-          "Twitter":"https://twitter.com/momo_eater1"
-        }
-      },
-      {
-        "Name": "まめプロ",
-        "Tags": ["CSharp"],
-        "Thumbnail":"/images/members/noom.jpg",
-        "Description": "プログラミングよわよわ。とりあえず毎日コード書きます",
-        "SNS": {
-          "Twitter":"https://twitter.com/mamepuro0540",
-          "Github":"https://github.com/mamepuro"
-        }
-      },
-      {
-        "Name": "Tamu... / shuWshu",
-        "Thumbnail": "/images/members/Tamu.jpg",
-        "Tags": [ "CSharp" ],
-        "Description": "プログラミング歴半年 最近ボドゲ宣教師と化している",
-        "SNS":  {
-          "Twitter": "https://twitter.com/Tamu0728r"
-        }
-      },
-      {
-        "Name": "Funny_Silkie",
-        "Tags" :  ["CSharp", "Altseed"],
-        "Thumbnail":"/images/members/Funny_Silkie.png",
-        "Description": "情報でも理工でもなく生物専攻の人。<br>Alseed2開発に只管尽力。リソースを作れるようにならねばと日々思っています。",
-        "SNS": {
-            "Twitter": "https://twitter.com/Funny_Silkie",
-            "Github": "https://github.com/Funny-Silkie"
-        }
-      },
-      {
-        "Name": "ninojujo",
-        "Description": "紹介できる自分がない"
-      },
-      {
-        "Name": "ハルピン",
-        "Thumbnail": "/images/members/r110.png",
-        "Description": "プログラミングわかんない"
-      },
-      {
-        "Name": "kinoko",
-        "Thumbnail": "/images/members/kinoko_19.png",
-        "Tags": ["Godot", "Blender"],
-        "Description":"Blender使えます。Godot Engine布教者。",
-        "SNS":{
-          "Twitter": "https://twitter.com/kinoko_ver2"
-        }
-      }
-    ]
-  },
-  {
-    "Year": 2018,
-    "Members": [
-      {
-        "Name": "Kaisei Yokoyama",
-        "Thumbnail": "/images/members/space_cat.jpg",
-        "Tags": [ "Rust", "Swift", "FSharp", "JavaScript" ],
-        "Description": "好きな言語は**日本語**です。ケツファイア駆動という先輩の言葉がとても気に入っています。",
-        "SNS": {
-          "Twitter": "https://twitter.com/KaiseiYokoyama",
-          "Github": "https://github.com/KaiseiYokoyama",
-          "Link": {
-            "Url": "https://kaiseiyokoyama.github.io/blog/",
-            "Title": "モダンな言語をたのむ"
-          }
-        }
-      },
-      {
-        "Name": "argonism",
-        "Thumbnail": "/images/members/nynk.png",
-        "Tags": [ "CSharp", "Python", "Ruby" ],
-        "Description": "ドット絵しか愛せない",
-        "SNS": {
-          "Twitter": "https://twitter.com/argo_nism",
-          "Github": "https://github.com/argonism",
-          "Link": {
-            "Url": "http://argonism.info/",
-            "Title": "ホームページ的なあれ"
-          }
-        }
-      },
-      {
-        "Name": "檸檬茶(Lemon TEA)",
-        "Thumbnail": "/images/members/LemonTEA.png",
-        "Tags": [ "CSharp", "C++", "Lua" ],
-        "Description": "音ゲーの人。C#とかC++とか書きます。最近Luaに手を出し始めました。東方の二次創作を作ってみたい",
-        "SNS": {
-          "Twitter": "https://twitter.com/Hi_Coders",
-          "Github": "https://github.com/GCLemon"
-        }
-      },
-      {
-        "Name": "Gon",
-        "Thumbnail": "/images/members/gon_icon.png",
-        "Tags": [ "CSharp", "C++", "Python" ],
-        "Description": "NetflixとAmazon Primeを燃料に作業する人間。C#とイラレ・フォトショでなんとかできると思いこんでいる。最近、同じ映画・アニメを見返すだけの老害になってるのでおすすめがあったら教えてね",
-        "SNS": {
-          "Twitter": "https://twitter.com/gooooooon_",
-          "Github": "https://github.com/gon6109"
-        }
-      },
-      {
-        "Name": "haru",
-        "Description": ""
-      },
-      {
-        "Name": "negset",
-        "Thumbnail": "/images/members/negset.svg",
-        "Tags": [ "Java", "Kotlin" ],
-        "Description": "JavaとかKotlinを書きます。",
-        "SNS": {
-          "Twitter": "https://twitter.com/negset",
-          "Github": "https://github.com/negset",
-          "Link": {
-            "Url": "https://negset.com/",
-            "Title": "negset.com"
-          }
-        }
-      },
-      {
-        "Name": "SIY1121",
-        "Description": "KotlinかわいいよKotlin。 プログラミングから2D/3Dグラフィック、BGM制作まで何でもやる。 "
-      },
-      {
-        "Name": "キノ子",
-        "Thumbnail": "/images/members/kinoko_18.png",
-        "Tags": [ "Ruby" ],
-        "Description": "食べることと寝ることとゼルダが好き",
-        "SNS": {
-          "Twitter": "https://twitter.com/nanaka0012",
-          "Github": "https://github.com/nanaka0012"
-        }
-      },
-      {
-        "Name": "ほんどぅー",
-        "Thumbnail": "/images/honDo.jpg",
-        "Tags": ["くりすた", "SpriteSutudio", "C++","ガンギマリ同好会" ],
-        "Description": "笑いのツボがとても浅い人間。特定の人間には特に抗体がない模様。Amcrげら担当。",
-        "SNS": {
-          "Twitter": "https://https://twitter.com/welt_meister_",
-          "Github": "https://github.com/hon-do"
-        }
-      },
-      {
-        "Name": "やまの",
-        "Thumbnail": "/images/members/yamano_icon.png",
-        "Tags": ["CSharp","JavaScript"],
-        "Description": "CLANNADとFINAL FANTASYをこよなく愛す転生した人です。",
-        "SNS": {
-          "Twitter": "https://twitter.com/nbz_ff15",
-          "Github": "https://github.com/nbz16"
-        }
-      }
-    ]
-  },
-  {
-    "Year": 2017,
-    "Members": [
-      {
-        "Name": "wraikny",
-        "Thumbnail": "/images/members/wraikny_icon.jpg",
-        "Tags": ["FSharp", "CSharp", "Rust", "Altseed", "Shader"],
-        "Description": "F#はいいぞ。CGとかゲームAIとか自動生成とか関数型言語とかに興味。<br>2019年代表。",
-        "SNS": {
-          "Github": "https://github.com/wraikny"
-        }
-      },
-      {
-        "Name": "zamaka",
-        "Thumbnail": "/images/members/zamaka_icon.png",
-        "Tags": ["CSharp", "Altseed", "CLIP STUDIO PAINT", "Blender", "Domino"],
-        "Description": "ゲームは総合芸術。リソースは自作するもの。<br>プログラム、イラスト、ドット絵、3Dモデリング、作曲、録音まで、広く深くが目標。",
-        "SNS": {
-          "Twitter": "https://twitter.com/zamaka9",
-          "Github": "https://github.com/zamaka9"
-        }
-      },
-      {
-        "Name": "Bunny",
-        "Description": "プログラミング初心者です。Unityばっかり触ってます。"
-      },
-      {
-        "Name": "けろちゃん",
-        "Description": "C++理解できない人。ゲーム以外のプログラムをよく書きます。"
-      },
-      {
-        "Name": "shot",
-        "Tags": ["CSharp", "Unity"],
-        "Description": "気が向いたときにゲームを作る。デザインパターンをすこれ"
-      }
-    ]
-  },
-  {
-    "Title": "Legend",
-    "Members": [
-      {
-        "Name": "swd",
-        "Description": "AmusementCreators創設者"
-      },
-      {
-        "Name": "ナムアニクラウド",
-        "Description": "プログラムはC#を書いています"
-      },
-      {
-        "Name": "ぬるかる",
-        "Description": "きつねかわいい！"
-      },
-      {
-        "Name": "ラン",
-        "Description": "コミケ前ケツファイア駆動ゲーム開発しています。大学に入ってからプログラミング始めました"
-      },
-      {
-        "Name": "おかくろ",
-        "Description": "お米を燃やします。"
-      },
-      {
-        "Name": "リンチョク",
-        "Description": "ホルモンは面白い!!"
-      },
-      {
-        "Name": "つな",
-        "Description": "好きなものに好きな要素をくっつけたらもっと好きなものができるのでは！？"
-      },
-      {
-        "Name": "argxento",
-        "Description": "2012年入部。現役時代はC++とSTG過激派でした。今はRustと位置ゲー好き"
-      },
-      {
-        "Name": "wistnki",
-        "Thumbnail": "/images/members/futaba-chan.png",
-        "Tags": [ "CSharp", "Altseed", "おうち10G", "イラレ" ],
-        "Description": "ゲームの原料はC#とイラレと美味しいごはん。<br>2017年代表。<br>[foglia](https://www.foglia.moe/)",
-        "SNS": {
-          "Twitter": "https://twitter.com/wistnki",
-          "Github": "https://github.com/wistnki"
-        }
-      },
-      {
-        "Name": "nyannyan",
-        "Description": "まともにゲーム制作をする事が無い美少女。"
       }
     ]
   }

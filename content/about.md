@@ -1,11 +1,19 @@
 ---
-title: About NITMic
-date: 2014-04-09
-authorbox: true
-menu: 
-    main:
-        name: About
-        weight: 10
+title: "aa"
+date: 2014-04-02
+thumbnail: "logo/logo.png"
+tags:
+  - "go"
+  - "golang"
+  - "templates"
+  - "themes"
+  - "development"
+categories:
+  - "Development"
+  - "golang"
+menu: main
+authors: 
+  - "dokudami"
 ---
 
 Hugo is a static site engine written in Go.
