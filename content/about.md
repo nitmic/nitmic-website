@@ -1,9 +1,12 @@
 ---
-title: About Hugo
+title: About NITMic
 date: 2014-04-09
-authorbox: false
+authorbox: true
 sidebar: false
-menu: main
+menu: 
+    main:
+        name: About
+        weight: 10
 ---
 
 Hugo is a static site engine written in Go.

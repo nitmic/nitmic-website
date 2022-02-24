@@ -1,0 +1,13 @@
+
+<div class="card">
+
+    <a href = "/authors/{{ urlize .Name }}"> {{ .Name }}</a>
+
+    {{ range .Tags }}
+        {{ . }}
+    {{ end }}
+
+    {{ .Description | markdownify }}
+
+</div>
+

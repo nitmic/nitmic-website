@@ -89,6 +89,12 @@ body {
 	min-width: 0;
 }
 
+/*
+.card{
+	/* background-color: #000;
+}
+*/
+
 .sidebar {
 	-webkit-flex: 1 0 21.66%;		/* 初期値：31.6% */
 	flex: 1 0 21.66%;				/* 初期値：31.6% */

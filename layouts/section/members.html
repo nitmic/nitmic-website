@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+    {{- .Content -}}
+
+    {{ range .Site.Data.member }}
+        {{ with .Year }}
+            <h3>{{ . }}入学</h3>
+        {{ end }}
+        {{ range .Members }}
+            {{ partial "member.html" . }}
+        {{ end }}
+            <br>
+    {{ end }}
+
+{{ end }}

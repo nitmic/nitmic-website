@@ -9,7 +9,7 @@ tags:
 categories:
   - "Development"
   - "golang"
-menu: main
+menu: false
 ---
 
 ## Step 1. Install Hugo
