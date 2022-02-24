@@ -3,6 +3,8 @@ title: Creating a New Theme
 date: 2014-09-28
 author: Michael Henderson
 sidebar: false
+authors: 
+  - "abiten"
 ---
 
 
