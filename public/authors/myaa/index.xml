@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Myaa on NITMic(仮)</title>
+    <link>http://nitmic.club.nitech.ac.jp/authors/myaa/</link>
+    <description>Recent content in Myaa on NITMic(仮)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/authors/myaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Myaa制作ゲーム：Twinst</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0004/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0004/</guid>
+      <description>紹介動画</description>
+    </item>
+    
+  </channel>
+</rss>
