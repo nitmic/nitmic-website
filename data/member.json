@@ -4,15 +4,11 @@
     "Members": [
       {
           "Name": "Mass",
-          "Tags": [ "コンポーザー" ],
-          "Thumbnail": "/images/members/image3.png",
-          "Description": "Massです"
+          "Tags": [ "コンポーザー" ]
       },
       {
           "Name": "kk",
-          "Tags": [ "デザイナー" ],
-          "Thumbnail": "/images/members/image.png",
-          "Description": "kkです"
+          "Tags": [ "デザイナー" ]
       }
     ]
   },
@@ -21,21 +17,37 @@
     "Members": [
       {
         "Name":"dokudami",
-        "Tags": ["プログラマ"],
-        "Thumbnail":"/images/members/dokudami.png",
-        "Description":"dokudamiです",
-        "SNS": {
-          "Twitter":"https://twitter.com/IhatovCopan2000"
-        }
+        "Tags": ["プログラマ"]
       },
       {
         "Name":"kuru",
-        "Tags": ["プログラマ"],
-        "Thumbnail":"/images/members/image.png",
-        "Description":"kuruです",
-        "SNS": {
-          "Twitter":"https://twitter.com/goethe_kafka"
-        }
+        "Tags": ["プログラマ"]
+      }
+    ]
+  },
+  {
+    "Year": 2019,
+    "Members": [
+      {
+        "Name":"アルエット",
+        "Tags": ["プログラマ"]
+      },
+      {
+        "Name":"fibrin",
+        "Tags": ["デザイナー"]
+      }
+    ]
+  },
+  {
+    "Year": 2018,
+    "Members": [
+      {
+        "Name":"ru",
+        "Tags": ["プログラマ"]
+      },
+      {
+        "Name":"Myaa",
+        "Tags": ["プログラマ"]
       }
     ]
   }
