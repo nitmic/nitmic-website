@@ -1,32 +1,39 @@
----
-title: About Hugo
-date: 2014-04-09
-authorbox: false
-sidebar: false
-menu: main
----
++++
+title = "NITMicについて"
+description = "NITMicについて"
+date = "2022-02-25"
+#categories = ["Development"]
+#tags = ["2022","HUGO","ホームページ"]
+sidebar = "right"
+authors = ["dokudami"]
+menu= "main"
++++
 
-Hugo is a static site engine written in Go.
+名古屋工業大学コンピュータクラブNITMicです。  
 
+NITMicの主な活動はゲーム制作です。  
+部員は`👾プログラマ`、`🎨デザイナー`、`🎹コンポーザー`のいずれかの役職に所属し、  
+チームを組んで、コンテストや学校祭に向けてゲームを作成しています。  
 
-It makes use of a variety of open source projects including:
+また、[#nitmic1draw](https://twitter.com/search?q=%23nitmic1draw&src=hashtag_click&f=live)やゲームジャム、部内勉強会などの活動もしております。  
+>有志でやりたいことがあったら気軽に企画してください。
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+#### 活動時間、活動場所について
+週1回の部会が毎週水曜日昼に行われます。  
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+コロナ自粛期間に伴い、現在の活動場所は`Slack`、`Discord`、`Scrapbox`といったオンラインサービス上です。部会は`Discord`で行われています。
 
-## Setup
+NITMicの部室は、名古屋工業大学の部室棟4階右手右側にあります。  
+PCが数台、KinectやVRゴーグルといった機材、漫画や参考書、その他いろいろあります。  
+>現在は部会で部室は用いていませんが、部員であれば入ることが可能です。
 
-Some fun facts about [Hugo](http://gohugo.io/):
+#### 各役職について
 
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+##### プログラマ
+ゲームエンジンを利用して、ゲーム中の様々な処理を実装します。また、デザイナーやコンポーザーが作成した素材を実際にゲームのなかに組み込んでいくのも仕事です。部内で主に使用しているツールとしては、`Unity(C#)`、`Siv3D(C++)`があります。プログラマとして入部する人のほとんどはプログラミング未経験でしたが、今では皆立派にゲームを作っています。プログラミング技術の向上やゲーム製作に役立つTipsの共有を目的とした講座や勉強会を不定期に催しています。
+##### 2Dデザイナー 
+UIデザインや、ゲームに使用する素材(キャラクター、背景 など…)のうち、`2Dグラフィックス`や`2Dドットイラスト`の作成を担当しています。企画者の要望や意見を反映しつつ、そのゲームの世界観・雰囲気に合うようデザインし、ゲームに彩りを与えていきます。部内で使用されているソフトは無料ソフトではEDGE 、 GIMP、MediBang Paint Pro、FireAlpaca など、有料ソフトではペイントツールSAI、CLIP STUDIO PAINT などです。
+##### 3Dデザイナー   
+3DゲームやVRゲームにおいて作品のテイストに関わる部分を担当する役職です。私たちは作品のテーマに沿って資料収集をし、マップ、アイテム、キャラクターのデザインを詰めて3Dソフトで作成していきます。 作品の舞台や魅力的なキャラクターを作ることができ、何より自分の作ったものがありありと見えるのでやりがいのある役職です。 また、3Dソフト勉強会を開催しており、技術とクオリティの向上を目指しています。部内では主に`blender`を使用しています。
+##### コンポーサー  
+ステージBGMやSE等の、ゲームの世界観を後押しする「音」の部分の製作を担当しています。 音楽製作ソフトの導入をはじめに、音楽理論等の講座や、自作した楽曲を持ち寄り互いに意見を出し合う場、各員がそれぞれ知識を持ち寄って教え合う場を設けるといった互いの技術の向上を目的とした活動も実施しています。部内で使用されているソフトは無料ソフトではCakewalk by BandLab、GarageBand など、有料ソフトではCubase、Studio One、FL STUDIO などです。
