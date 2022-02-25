@@ -1,4 +1,4 @@
-# baseURL = 'http://example.org/'
+baseURL = 'http://nitmic.club.nitech.ac.jp/'
 # languageCode = 'en-us'
 # title = 'My New Hugo Site'
 
@@ -36,7 +36,7 @@ summaryLength = 140
   pager = true
   post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["css/style.css"]
+  customCSS = ["/css/style.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
