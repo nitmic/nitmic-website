@@ -6,9 +6,13 @@
 	</div>
 	{{- end }}
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-	<h1>ようこそsosoosososososoNITMicホームページへ</h1>
+
+	<!--
 	<img src="logo/logo.png">
+	<h1>ようこそNITMicホームページへ</h1>
 	<hr>
+	-->
+
 
 	{{- range $paginator.Pages }}
 		{{- .Render "summary" }}

@@ -12,6 +12,16 @@ theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+
+#日本語用の.Summary設定
+hasCJKLanguage = true 
+summaryLength = 140
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+
 [Author]
   name = "John Doe"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
@@ -22,11 +32,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   opengraph = true
   twitter_cards = true
   readmore = false # Show "Read more" button in list if true
-  authorbox = true
+  authorbox = false
   pager = true
   post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/style.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle

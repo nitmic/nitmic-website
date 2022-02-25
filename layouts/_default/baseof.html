@@ -26,6 +26,8 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
+
+	<!-- customCSSを適用している箇所 , rangeだから複数customCSS登録しても大丈夫そう？ -->
 	{{ $style := resources.Get "css/custom.css" | resources.ExecuteAsTemplate "css/custom.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	{{ range .Site.Params.customCSS -}}

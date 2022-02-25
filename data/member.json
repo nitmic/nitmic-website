@@ -1,0 +1,54 @@
+[
+  {
+    "Year": 2021,
+    "Members": [
+      {
+          "Name": "Mass",
+          "Tags": [ "コンポーザー" ]
+      },
+      {
+          "Name": "kk",
+          "Tags": [ "デザイナー" ]
+      }
+    ]
+  },
+  {
+    "Year": 2020,
+    "Members": [
+      {
+        "Name":"dokudami",
+        "Tags": ["プログラマ"]
+      },
+      {
+        "Name":"kuru",
+        "Tags": ["プログラマ"]
+      }
+    ]
+  },
+  {
+    "Year": 2019,
+    "Members": [
+      {
+        "Name":"アルエット",
+        "Tags": ["プログラマ"]
+      },
+      {
+        "Name":"fibrin",
+        "Tags": ["デザイナー"]
+      }
+    ]
+  },
+  {
+    "Year": 2018,
+    "Members": [
+      {
+        "Name":"ru",
+        "Tags": ["プログラマ"]
+      },
+      {
+        "Name":"Myaa",
+        "Tags": ["プログラマ"]
+      }
+    ]
+  }
+]
