@@ -1,11 +1,11 @@
-# baseURL = 'http://example.org/'
+baseURL = 'http://nitmic.club.nitech.ac.jp/'
 # languageCode = 'en-us'
 # title = 'My New Hugo Site'
 
 # theme = "mainroad"
 
 baseurl = "/"
-title = "NITMic" # NITMicに変更
+title = "NITMic(仮)" # NITMicに変更
 languageCode = "ja" # jaに変更
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -28,7 +28,7 @@ summaryLength = 140
   avatar = "img/avatar.png"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
+  description = "名古屋工業大学コンピュータ倶楽部NITMic公式ホームページ" # Description of your site
   opengraph = true
   twitter_cards = true
   readmore = false # Show "Read more" button in list if true
@@ -36,7 +36,7 @@ summaryLength = 140
   pager = true
   post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["css/style.css"]
+  customCSS = ["/css/style.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
