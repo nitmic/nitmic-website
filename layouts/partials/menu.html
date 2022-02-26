@@ -7,7 +7,7 @@
 		{{- $currentURL := "."|relURL }}
 		{{- $homeURL := "/"|relURL }}
 		<!-- ここのアクセス後の色変うまく動作してくれない -->
-		<li class="menu__item{{ if eq $currentURL $homeURL}} menu__item--active {{ end }}">
+		<li class="menu__item{{ if .IsHome}} menu__item--active {{ end }}">
 			<a class="menu__link" href="/">
 				<span class="menu__text">ホーム</span>
 			</a>

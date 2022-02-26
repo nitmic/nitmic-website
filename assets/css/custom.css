@@ -186,6 +186,10 @@ h3 {
 	font-size: 1.25rem;
 }
 
+.label{
+	margin: 0;
+}
+
 .top{
 	font-size: 20px;
 	font-size: 1.25rem;
@@ -600,6 +604,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-bottom: 1.25rem;
 }
 
+.post__header2,
+.main__header2{
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+	border-bottom: 2px solid #bbbbbb;
+}
+
 .main__title {
 	font-size: 28px;
 	font-size: 1.75rem;
@@ -645,8 +656,11 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__title {
+	display: inline;
 	margin: 0;
 }
+
+
 
 .post__meta {
 	padding: 5px 0;
@@ -1416,17 +1430,17 @@ textarea {
 
 /* カード一覧 */
 .cards {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*align-items:flex-start;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
 }
 
 /* カード */
 .card {
-  /*display: flex;*/
+  display: flex;
   /* サムネイル, ドキュメント(名前、タグ、description, SNSアイコンなど)、を縦に並べる */
   flex-direction: column;
-
+  background-color: #7a8288;
   flex: 0 0 30%;
   margin: 0.6%;
   display: inline-block;
