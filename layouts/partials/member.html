@@ -1,19 +1,22 @@
 
 <div class="card">
     {{ $name := .Name}}
-
-    {{ with .Thumbnail }}
+	
+    <!-- {{ with .Thumbnail }}
     <img class="thumbnail" src="{{ . }}">
-    {{ end }}
+    {{ end }} -->
     
-    <a href = "/authors/{{ urlize $name }}"> {{ $name }}</a>
+    <a href = "/authors/{{ urlize $name }}"> 
+        {{if .Icon}}
+            <img class = "memberList_icon_img" src="{{ .Icon }}" alt="a">
+        {{end}}
+        <div class = "memberList_indent">{{ $name }}</div>
+    </a>
 
     
     {{ range .Tags }}
         [{{ . }}]
     {{ end }}
-
-    {{ .Description | markdownify }}
 
     {{ with .SNS.Twitter }}
         <a href="{{ . }}" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">

@@ -1,3 +1,10 @@
+{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
+
+{{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
+{{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
+{{- $fontFamilyPrimary := .Site.Params.style.vars.fontFamilyPrimary | default $fontSans -}}
+{{- $fontFamilySecondary := .Site.Params.style.vars.fontFamilySecondary | default $fontMono -}}
+
 *,
 *::before,
 *::after {
@@ -24,7 +31,6 @@ section {
 
 :focus::-moz-placeholder {
 	color: transparent;
-	background-color: #d2691e;
 }
 
 :focus:-moz-placeholder {
@@ -44,7 +50,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: {{ $fontFamilyPrimary }};
 	font-size: 14px;
 	font-size: .875rem;
 	line-height: 1.6;
@@ -141,7 +147,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 /* Animation */
@@ -179,18 +185,6 @@ h3 {
 	font-size: 1.25rem;
 }
 
-.label{
-	margin: 0;
-}
-
-.top{
-	font-size: 20px;
-	font-size: 1.25rem;
-	border-bottom: 1px solid #ebebed;
-	padding-bottom: 0.8rem;
-	margin-bottom: 1rem
-}
-
 h4 {
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -212,7 +206,7 @@ a {
 }
 
 a:hover {
-	color: #ff9305;
+	color: {{ $highlightColor }};
 }
 
 hr {
@@ -273,7 +267,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: {{ $fontFamilySecondary }};
 	font-size: inherit;
 }
 
@@ -318,7 +312,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid #ff9305;
+	border-left: 5px solid {{ $highlightColor }};
 }
 
 blockquote p:last-child {
@@ -450,14 +444,14 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #ff9305;
+	color: {{ $highlightColor }};
 	border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #ff9305;
+	background: {{ $highlightColor }};
 	border: 0;
 }
 
@@ -494,7 +488,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px #ff9305;
+	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -507,7 +501,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: #ff9305;
+	color: {{ $highlightColor }};
 }
 
 .menu__list {
@@ -516,7 +510,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 .menu__item:first-child {
@@ -524,7 +518,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 .menu__link {
@@ -565,7 +559,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #ff9305;
+		border-bottom: 5px solid {{ $highlightColor }};
 	}
 
 	.menu__btn {
@@ -597,13 +591,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-bottom: 1.25rem;
 }
 
-.post__header2,
-.main__header2{
-	padding-bottom: 1.25rem;
-	margin-bottom: 1.25rem;
-	border-bottom: 2px solid #bbbbbb;
-}
-
 .main__title {
 	font-size: 28px;
 	font-size: 1.75rem;
@@ -626,7 +613,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: #ff9305;
+	color: {{ $highlightColor }};
 }
 
 .meta__item {
@@ -649,11 +636,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .post__title {
-	display: inline;
 	margin: 0;
 }
-
-
 
 .post__meta {
 	padding: 5px 0;
@@ -686,13 +670,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a,
 .authorbox__description a {
 	font-weight: 700;
-	color: #ff9305;
+	color: {{ $highlightColor }};
 }
 
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover {
-	color: #ff9305;
+	color: {{ $highlightColor }};
 	text-decoration: underline;
 }
 
@@ -774,7 +758,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 .tags__link,
@@ -789,7 +773,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: #ff9305;
+	background: {{ $highlightColor }};
 	fill: #fff;
 }
 
@@ -851,7 +835,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: #ff9305;
+	color: {{ $highlightColor }};
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -939,7 +923,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 /* Pager (prev/next links) navigation */
@@ -1061,7 +1045,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 textarea {
@@ -1090,7 +1074,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #ff9305;
+	border-bottom: 3px solid {{ $highlightColor }};
 }
 
 .widget__item {
@@ -1179,7 +1163,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: #ff9305;
+	background: {{ $highlightColor }};
 }
 
 .widget-languages__link-btn {
@@ -1423,17 +1407,17 @@ textarea {
 
 /* カード一覧 */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items:flex-start;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*align-items:flex-start;*/
 }
 
 /* カード */
 .card {
-  display: flex;
+  /*display: flex;*/
   /* サムネイル, ドキュメント(名前、タグ、description, SNSアイコンなど)、を縦に並べる */
   flex-direction: column;
-  background-color: #7a8288;
+
   flex: 0 0 30%;
   margin: 0.6%;
   display: inline-block;
@@ -1487,9 +1471,4 @@ textarea {
 }
 .link-external:hover {
   fill: #3088d4;
-}
-
-/* ------------------------------------------------------ */
-.top_header_image{
-	margin-bottom: 5em;
 }

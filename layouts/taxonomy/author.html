@@ -1,11 +1,51 @@
 {{ define "main" }}
 <main class="main list" role="main">
 	
-	{{- with .Title }}
-	<header class="main__header">
-		<h1 class="main__title">{{ . }}</h1>
-	</header>
-	{{- end }}
+	<div class = "author_icon_img_flex">
+		{{ $title := .Title }}
+			{{ range .Site.Data.member }}
+				{{ range .Members }}
+					{{ if eq .Name $title }}
+					{{ if .Icon}}
+							<img class = "author_icon_img" src="{{.Icon}}" alt="">
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{- with .Title }}
+		<header class="main__header__author">
+			<h1 class="main__title__author">{{ . }}</h1>
+		</header>
+		{{- end }}
+		<div class = "author_sns">
+			{{ range .Site.Data.member }}
+				{{ range .Members }}
+					{{ if eq .Name $title }}
+					{{ if .Twitter}}
+							<a href="{{.Twitter}}">
+								im
+							</a>
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		</div>
+	</div>
+
+	<div class = "author_description">
+		{{ range .Site.Data.member }}
+			{{ range .Members }}
+				{{ if eq .Name $title }}
+					{{ if .Description}}
+						<p class = "nomargin">{{.Description}}</p>
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	</div>
+
+	<h3>執筆した記事</h3>
+
 	{{- with .Content }}
 	<div class="content main__content clearfix">
 		{{ . }}

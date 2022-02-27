@@ -233,6 +233,10 @@ p {
 	margin: 0 0 1.25rem;
 }
 
+p.nomargin{
+	margin: 0;
+}
+
 b,
 strong {
 	font: inherit;
@@ -611,9 +615,19 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	border-bottom: 2px solid #bbbbbb;
 }
 
+.main__header__author {
+	margin: 0 0 0 5%;
+}
+
 .main__title {
 	font-size: 28px;
 	font-size: 1.75rem;
+}
+
+.main__title__author {
+	font-size: 28px;
+	font-size: 1.75rem;
+	margin: 0;
 }
 
 .main__content {
@@ -1442,14 +1456,27 @@ textarea {
   flex-direction: column;
   background-color: #7a8288;
   flex: 0 0 30%;
-  margin: 0.6%;
+  margin: 1%;
   display: inline-block;
+  border-radius: 15px;
 }
+
+.memberList_icon_img{
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+
 /* カード(スマホ) */
 @media screen and (max-width: 600px) {
+	/* cssに書く順番がかかわる使用あり*/
   .card {
     flex: 0 0 100%;
   }
+  .memberList_icon_img{
+	width: 20%;
+	min-width: 70px;
+	border-radius: 15px 0 0 15px;
+   }
 }
 
 .card > img.thumbnail {
@@ -1499,4 +1526,27 @@ textarea {
 /* ------------------------------------------------------ */
 .top_header_image{
 	margin-bottom: 5em;
+}
+
+.author_icon_img{
+	width: 20%;
+	border-radius: 30%;
+}
+
+.author_icon_img_flex{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+}
+
+.author_description{
+	width: 95%;
+	padding: 2% 0 1% 5%;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 1%;
+}
+
+.memberList_indent{
+	display: inline;
+	margin-left: 1rem;
 }

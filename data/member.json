@@ -33,11 +33,70 @@
     "Members": [
       {
         "Name":"dokudami",
-        "Tags": ["プログラマ"]
+        "Tags": ["プログラマ"],
+        "Description":"こんにちは",
+        "Icon":"/images/members/dokudami.png",
+        "Twitter":"https://github.com/nitmic-git/nitmic-hp-dev-2021/pulls"
       },
       {
         "Name":"kuru",
-        "Tags": ["プログラマ"]
+        "Tags": ["プログラマ"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U017K6ZQ43S-4d8e2c104936-512"
+      },
+      {
+        "Name":"りーくん",
+        "Tags": ["プログラマ"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01GDNS9W9L-11b18f6b887b-512"
+      },
+      {
+        "Name":"たいち",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01496E1JRG-5e5d4808f85d-512"
+      },
+      {
+        "Name":"ナス好き",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U015TJ728UA-cde6ef75aa5e-512"
+      },
+      {
+        "Name":"しお",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U014CFWGHEJ-f5346f90f890-512"
+      },
+      {
+        "Name":"はっしー",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U017NBQE5CZ-552bf3c1eeeb-512"
+      },
+      {
+        "Name":"tamaki",
+        "Tags": ["3Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U015BAG5R9A-4281e2ae6ab0-512"
+      }, 
+      {
+        "Name":"mituya",
+        "Tags": ["3Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01ASGA469F-99ed998a6681-512"
+      },
+      {
+        "Name":"sui",
+        "Tags": ["コンポーザー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U014KNS4S9Z-3c121bbbc9ad-512"
+      },
+      {
+        "Name":"こーせー",
+        "Tags": ["コンポーザー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U0179GRFJLE-g41bdc7a7380-512"
       }
     ]
   },
