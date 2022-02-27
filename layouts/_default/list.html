@@ -1,11 +1,15 @@
 {{ define "main" }}
 <main class="main list" role="main">
-	
+
+	{{- $section := .Section }}	
 	{{- with .Title }}
-	<header class="main__header">
-		<h1 class="main__title">{{ . }}</h1>
+	<header class="main__header2">
+		<h3 class="label">{{if (eq "categories" $section)}}CATEGORIES{{end}}</h3>
+		<h3 class="label">{{if (eq "tags" $section)}}TAGS{{end}}</h3>
+		<h1 class="post__title">◇{{ . }}</h1> 
 	</header>
 	{{- end }}
+
 	{{- with .Content }}
 	<div class="content main__content clearfix">
 		{{ . }}

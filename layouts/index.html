@@ -7,11 +7,16 @@
 	{{- end }}
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 
-	<!--
-	<img src="logo/logo.png">
-	<h1>ようこそNITMicホームページへ</h1>
-	<hr>
-	-->
+	<!-- トップページ
+	ヘッダー -->
+	
+	<div class = "top_header_image">
+		<img src="/logo/logo.png">
+		<h1>ようこそNITMicホームページへ</h1>
+	</div>
+	
+	<h3 class="top">最新の記事</h3>
+	
 
 
 	{{- range $paginator.Pages }}

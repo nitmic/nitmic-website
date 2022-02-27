@@ -7,6 +7,7 @@ date = "2022-02-25"
 sidebar = "right"
 authors = ["dokudami"]
 menu= "main"
+weight="1"
 +++
 
 名古屋工業大学コンピュータクラブNITMicです。  
