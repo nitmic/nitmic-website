@@ -36,7 +36,9 @@
         "Tags": ["プログラマ"],
         "Description":"こんにちは",
         "Icon":"/images/members/dokudami.png",
-        "Twitter":"https://github.com/nitmic-git/nitmic-hp-dev-2021/pulls"
+        "Twitter":"https://twitter.com/dokudamichang",
+        "Homepage":"https://scrapbox.io/dokudamibox/",
+        "Git":"https://github.com/ysdzm"
       },
       {
         "Name":"kuru",
@@ -78,7 +80,9 @@
         "Name":"tamaki",
         "Tags": ["3Dデザイナー"],
         "Description":"",
-        "Icon":"https://ca.slack-edge.com/T0D490BF0-U015BAG5R9A-4281e2ae6ab0-512"
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U015BAG5R9A-4281e2ae6ab0-512",
+        "Twitter":"https://twitter.com/TmgHiro",
+        "Git":"https://github.com/ysdzm"
       }, 
       {
         "Name":"mituya",

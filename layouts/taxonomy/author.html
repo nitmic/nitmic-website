@@ -1,30 +1,57 @@
 {{ define "main" }}
 <main class="main list" role="main">
 	
-	<div class = "author_icon_img_flex">
-		{{ $title := .Title }}
-			{{ range .Site.Data.member }}
-				{{ range .Members }}
-					{{ if eq .Name $title }}
-					{{ if .Icon}}
-							<img class = "author_icon_img" src="{{.Icon}}" alt="">
+	<div class = "author_top_flex">
+		<div class = "author_topleft_flexitem">
+			{{ $title := .Title }}
+				{{ range .Site.Data.member }}
+					{{ range .Members }}
+						{{ if eq .Name $title }}
+						{{ if .Icon}}
+								<img class = "author_icon_img" src="{{.Icon}}" alt="">
+							{{ end }}
 						{{ end }}
 					{{ end }}
 				{{ end }}
-			{{ end }}
-		{{- with .Title }}
-		<header class="main__header__author">
-			<h1 class="main__title__author">{{ . }}</h1>
-		</header>
-		{{- end }}
-		<div class = "author_sns">
+
+			<div class = "author_linkicon">
+				{{ range .Site.Data.member }}
+					{{ range .Members }}
+						{{ if eq .Name $title }}
+
+								{{ if .Twitter}}
+									<a href="{{.Twitter}}">
+										<img src="/images/parts/twitter.png" alt="">
+									</a>
+								{{ end }}
+								{{ if .Homepage}}
+									<a href="{{.Homepage}}">
+										<img src="/images/parts/homepage.png" alt="">
+									</a>
+								{{ end }}
+								{{ if .Git}}
+									<a href="{{.Git}}">
+										<img src="/images/parts/GitHub-Mark.png" alt="">
+									</a>
+								{{ end }}
+
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			</div>
+		</div>
+
+		<div class = "author_topright_flexitem">
+			{{- with .Title }}
+			<header class="main__header__author2">
+				<h1 class="main__title__author">{{ . }}</h1>
+			</header>
+			{{- end }}
 			{{ range .Site.Data.member }}
 				{{ range .Members }}
 					{{ if eq .Name $title }}
-					{{ if .Twitter}}
-							<a href="{{.Twitter}}">
-								im
-							</a>
+						{{ if .Description}}
+							<p class = "nomargin">{{.Description}}</p>
 						{{ end }}
 					{{ end }}
 				{{ end }}
@@ -32,19 +59,7 @@
 		</div>
 	</div>
 
-	<div class = "author_description">
-		{{ range .Site.Data.member }}
-			{{ range .Members }}
-				{{ if eq .Name $title }}
-					{{ if .Description}}
-						<p class = "nomargin">{{.Description}}</p>
-					{{ end }}
-				{{ end }}
-			{{ end }}
-		{{ end }}
-	</div>
 
-	<h3>執筆した記事</h3>
 
 	{{- with .Content }}
 	<div class="content main__content clearfix">
