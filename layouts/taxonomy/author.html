@@ -2,8 +2,8 @@
 <main class="main list" role="main">
 	
 	{{- with .Title }}
-	<header class="main__header">
-		<h1 class="main__title">{{ . }}</h1>
+	<header class="main__header post__meta">
+		<h1 class="main__title">{{- partial "svg/author.svg" (dict "class" "meta__icon") -}}{{ . }}</h1>
 	</header>
 	{{- end }}
 	{{- with .Content }}
