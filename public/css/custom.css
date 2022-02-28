@@ -1,10 +1,3 @@
-{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
-
-{{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
-{{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
-{{- $fontFamilyPrimary := .Site.Params.style.vars.fontFamilyPrimary | default $fontSans -}}
-{{- $fontFamilySecondary := .Site.Params.style.vars.fontFamilySecondary | default $fontMono -}}
-
 *,
 *::before,
 *::after {
@@ -50,7 +43,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: {{ $fontFamilyPrimary }};
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-size: .875rem;
 	line-height: 1.6;
@@ -147,7 +140,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 /* Animation */
@@ -206,7 +199,7 @@ a {
 }
 
 a:hover {
-	color: {{ $highlightColor }};
+	color: #ff9305;
 }
 
 hr {
@@ -267,7 +260,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: {{ $fontFamilySecondary }};
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	font-size: inherit;
 }
 
@@ -312,7 +305,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid {{ $highlightColor }};
+	border-left: 5px solid #ff9305;
 }
 
 blockquote p:last-child {
@@ -444,14 +437,14 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: {{ $highlightColor }};
+	color: #ff9305;
 	border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: {{ $highlightColor }};
+	background: #ff9305;
 	border: 0;
 }
 
@@ -488,7 +481,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
+	box-shadow: inset 0 0 1px 3px #ff9305;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -501,7 +494,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: {{ $highlightColor }};
+	color: #ff9305;
 }
 
 .menu__list {
@@ -510,7 +503,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 .menu__item:first-child {
@@ -518,7 +511,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 .menu__link {
@@ -559,7 +552,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid {{ $highlightColor }};
+		border-bottom: 5px solid #ff9305;
 	}
 
 	.menu__btn {
@@ -613,7 +606,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: {{ $highlightColor }};
+	color: #ff9305;
 }
 
 .meta__item {
@@ -670,13 +663,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a,
 .authorbox__description a {
 	font-weight: 700;
-	color: {{ $highlightColor }};
+	color: #ff9305;
 }
 
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover {
-	color: {{ $highlightColor }};
+	color: #ff9305;
 	text-decoration: underline;
 }
 
@@ -758,7 +751,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 .tags__link,
@@ -773,7 +766,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: {{ $highlightColor }};
+	background: #ff9305;
 	fill: #fff;
 }
 
@@ -835,7 +828,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: {{ $highlightColor }};
+	color: #ff9305;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -923,7 +916,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 /* Pager (prev/next links) navigation */
@@ -1045,7 +1038,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 textarea {
@@ -1074,7 +1067,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid {{ $highlightColor }};
+	border-bottom: 3px solid #ff9305;
 }
 
 .widget__item {
@@ -1163,7 +1156,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: {{ $highlightColor }};
+	background: #ff9305;
 }
 
 .widget-languages__link-btn {
