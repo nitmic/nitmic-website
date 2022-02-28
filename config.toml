@@ -5,7 +5,7 @@ baseURL = 'http://nitmic.club.nitech.ac.jp/'
 # theme = "mainroad"
 
 baseurl = "/"
-title = "NITMic(仮)" # NITMicに変更
+title = "NITMic" # NITMicに変更
 languageCode = "ja" # jaに変更
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -15,7 +15,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 #日本語用の.Summary設定
 hasCJKLanguage = true 
-summaryLength = 140
+summaryLength = 130
 
 [taxonomies]
   author = "authors"
@@ -36,7 +36,7 @@ summaryLength = 140
   pager = true
   post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["/css/style.css"]
+  customCSS = ["css/style.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle

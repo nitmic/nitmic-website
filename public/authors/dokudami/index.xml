@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dokudami on NITMic(仮)</title>
+    <title>dokudami on NITMic</title>
     <link>http://nitmic.club.nitech.ac.jp/authors/dokudami/</link>
-    <description>Recent content in dokudami on NITMic(仮)</description>
+    <description>Recent content in dokudami on NITMic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/authors/dokudami/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/about/</guid>
-      <description>名古屋工業大学コンピュータクラブNITMicです。 NITMicの主な活動はゲーム制作です。 部員は👾プログラマ、🎨デザイナー、🎹コンポーザーのいずれかの役職に所属し、 チームを組んで、コンテストや学校祭に向けてゲームを作成しています。 また、#nitmic1drawやゲームジャム、部内</description>
+      <description>名古屋工業大学コンピュータクラブNITMicです。 NITMicの主な活動はゲーム制作です。 部員は👾プログラマ、🎨デザイナー、🎹コンポーザーのいずれかの役職に所属し、 チームを組んで、コンテストや学校祭に向けてゲームを作成しています。 また、#nitmic1draw</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/post/0002/</guid>
-      <description>NITMicでは、2020年冬から#nitmic1drawというワンドロ企画を定期的に行っています。 はじめに ワンドロ企画という文化があります。 これは、お題に沿って1時間(1hour)で絵を描き、ツイッターなどで投稿するというものです。絵のクオリティは問われません。定期的に絵を描く</description>
+      <description>NITMicでは、2020年冬から#nitmic1drawというワンドロ企画を定期的に行っています。 はじめに ワンドロ企画という文化があります。 これは、お題に沿って1時間(1hour)で絵を描き、ツイッターなどで投稿するというものです。絵のクオリティは問われませ</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/post/0001/</guid>
-      <description>幣学では、本日で春休みが終了し、前期授業が始まろうとしています。 本年度の授業形態は やや 複雑ですが、頑張っていきましょう。 サイトを更新しよう 余談は置いておいて、NITMicのホームページの更新を行いました。 作成途中の箇所もありますが、前期授業開始日とキリが良いので本日更新いたします</description>
+      <description>幣学では、本日で春休みが終了し、前期授業が始まろうとしています。 本年度の授業形態は やや 複雑ですが、頑張っていきましょう。 サイトを更新しよう 余談は置いておいて、NITMicのホームページの更新を行いました。 作成途中の箇所もありますが、前期授業開始日とキリが良いの</description>
     </item>
     
   </channel>

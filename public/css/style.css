@@ -4,7 +4,7 @@
 
 /* タイトルロゴで NITMIC -> NITMic となるように */
 .logo__text {
-	/*text-transform: uppercase;*/
+	text-transform: none;
 }
 
 .sidebar {
