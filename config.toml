@@ -1,4 +1,4 @@
-# baseURL = 'http://example.org/'
+baseURL = 'http://nitmic.club.nitech.ac.jp/'
 # languageCode = 'en-us'
 # title = 'My New Hugo Site'
 
@@ -12,25 +12,35 @@ theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+
+#日本語用の.Summary設定
+hasCJKLanguage = true 
+summaryLength = 130
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+
 [Author]
   name = "John Doe"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
 
 [Params]
-  description = "John Doe's Personal blog about everything" # Description of your site
+  description = "名古屋工業大学コンピュータ倶楽部NITMic公式ホームページ" # Description of your site
   opengraph = true
   twitter_cards = true
   readmore = false # Show "Read more" button in list if true
-  authorbox = true
+  authorbox = false
   pager = true
   post_meta = ["date", "categories" , "author"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/style.css"]
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
-  # image = "logo/logo.png"
+  image = "logo/logo.png"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
