@@ -40,7 +40,7 @@ summaryLength = 130
 
 [Params.logo]
   subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
-  # image = "logo/logo.png"
+  image = "logo/logo.png"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
