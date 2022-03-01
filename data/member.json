@@ -2,30 +2,136 @@
   {
     "Year": 2021,
     "Members": [
+      { 
+        "Name":"MT1",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01TJMBCYS3-f03948397375-512"
+      },
+      { 
+        "Name":"がわ",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01U6010MRS-a6edf4abebd4-512"
+      },
+      { 
+        "Name":"kk",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01UFJNS9J5-7a3e6adf6626-512"
+      },
+      { 
+        "Name":"S.A.Taz",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01TYF0BBM2-ef326c8efc33-512"
+      },
+      { 
+        "Name":"きひろ",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01UD239F27-8919f6b9978f-512"
+      },
+      { 
+        "Name":"はやし",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01UHFZ8866-g5998aec9d42-512"
+      },
+      { 
+        "Name":"Taku-san",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01U7LB7E6T-87c09691c9e7-512"
+      },
+      { 
+        "Name":"いず",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01V5M0G7FG-6c4da3ee8093-512"
+      },
+      { 
+        "Name":"Yujin-K",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U020N933NUQ-8d0e73695f4a-512"
+      },
+      { 
+        "Name":"ムク",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01V5MNPLTG-c35c9e006548-512"
+      },
+      { 
+        "Name":"Artst",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U020112JQE7-bb8228515d9e-512"
+      },
+      { 
+        "Name":"shinato",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02109B728Y-afda1883bbf8-512"
+      },
+      { 
+        "Name":"きょう",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U022JR4R8H5-cc6cfc5119b6-512"
+      },
+      { 
+        "Name":"かんぺい",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02549YUTG9-de073aecff5c-512"
+      },
+      { 
+        "Name":"フジソン",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U024W4N89TQ-g7f7af477612-512"
+      },
+      { 
+        "Name":"未底",
+        "Tags": ["2Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02GBQ47BT2-55bf9a8813a8-512"
+      },
+      { 
+        "Name":"塩味",
+        "Tags": ["3Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01U14KU5N1-g013d05e92e2-512"
+      },
+      { 
+        "Name":"ジュンセイ",
+        "Tags": ["3Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U020Q9GLNEL-93109e9c38d9-512"
+      },
+      { 
+        "Name":"乙矢",
+        "Tags": ["3Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02Q4DFTVH7-e6b8f9f55647-512"
+      },
+      { 
+        "Name":"ニマーン",
+        "Tags": ["3Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U0291L3QNB1-406df31aae88-512"
+      },
+      {
+        "Name": "Thike",
+        "Tags": [ "コンポーザー" ],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01USV5BDSS-2532a6467952-512"
+      },
       {
           "Name": "Mass",
-          "Tags": [ "コンポーザー" ]
+          "Tags": [ "コンポーザー" ],
+          "Icon":"https://ca.slack-edge.com/T0D490BF0-U01UAM2JFF0-108de914fd65-512"
       },
       {
-          "Name": "kk",
-          "Tags": [ "デザイナー" ]
+          "Name": "セレン",
+          "Tags": [ "コンポーザー" ],
+          "Icon":"https://ca.slack-edge.com/T0D490BF0-U0234FY2J8Z-3da25185c0fa-512"
       },
       {
-        "Name": "Mas",
-        "Tags": [ "コンポーザー" ]
-    },
-    {
-        "Name": "kkkkkkkkkkkkkkkkkkkk",
-        "Tags": [ "デザイナー" ]
-    },
-    {
-      "Name": "Massss",
-      "Tags": [ "コンポーザー" ]
-  },
-  {
-      "Name": "kkkkkkkkkkkkkkkkkkkkkkk",
-      "Tags": [ "デザイナー" ]
-  }
+        "Name": "shenzel",
+        "Tags": [ "コンポーザー" ],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U020LR47UVA-06daae16edb9-512"
+      },
+      {
+        "Name": "たくみ",
+        "Tags": [ "？" ],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U020E5JD96C-g87e5c9d4475-512"
+      },
+      {
+        "Name": "とり",
+        "Tags": [ "？" ],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02P3EYT890-6b73e011e0c8-512"
+      }
     ]
   },
   {
@@ -53,10 +159,28 @@
         "Icon":"https://ca.slack-edge.com/T0D490BF0-U01GDNS9W9L-11b18f6b887b-512"
       },
       {
+        "Name":"Sora513",
+        "Tags": ["プログラマ"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02CFSV2FB4-d1c54716fdc9-512"
+      },
+      {
+        "Name":"Yuji",
+        "Tags": ["プログラマ"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U022V5U6EQ6-g092f5d82689-512"
+      },
+      {
         "Name":"たいち",
         "Tags": ["2Dデザイナー"],
         "Description":"",
         "Icon":"https://ca.slack-edge.com/T0D490BF0-U01496E1JRG-5e5d4808f85d-512"
+      },
+      {
+        "Name":"黒豆腐",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U02181Z7ZT6-546a931a403e-512"
       },
       {
         "Name":"ナス好き",
@@ -82,7 +206,9 @@
         "Description":"",
         "Icon":"https://ca.slack-edge.com/T0D490BF0-U015BAG5R9A-4281e2ae6ab0-512",
         "Twitter":"https://twitter.com/TmgHiro",
-        "Git":"https://github.com/ysdzm"
+        "Git":"https://github.com/tamaki380",
+        "Homepage":"https://tamaki380.github.io/myhomepage.github.io/index.html"
+
       }, 
       {
         "Name":"mituya",
@@ -109,11 +235,63 @@
     "Members": [
       {
         "Name":"アルエット",
-        "Tags": ["プログラマ"]
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJK2H1Y6N-bddf7cba4597-512"
       },
       {
+        "Name":"Nov",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJG9ZEWG2-3d4ac8682ed3-512"
+      }, 
+      {
+        "Name":"オガトモ",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJYJS9F60-d73879abb61b-512"
+      }, 
+      {
+        "Name":"nerune",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UAQBAS4HF-db14f21771f2-512"
+      }, 
+      {
+        "Name":"ホソヤ",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJY9UK0J3-78bcc9880f9d-512"
+      },  
+      {
+        "Name":"りお",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJK2DRMNE-g8a5b59c9e58-512"
+      }, 
+      {
+        "Name":"スズキ",
+        "Tags": ["2Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJVV7TR7W-20286eafdb8a-512"
+      },   
+      {
+        "Name":"深月詠狐",
+        "Tags": ["2Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UKPCA8A1W-d9bb90fcfa1e-512"
+      },   
+      {
+        "Name":"おばこう",
+        "Tags": ["2Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJWE0N8G5-36d6d671eb0c-512"
+      },   
+      {
         "Name":"fibrin",
-        "Tags": ["デザイナー"]
+        "Tags": ["3Dデザイナー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJWF3BTDW-15c3a90ad521-512"
+      },
+      {
+        "Name":"真言",
+        "Tags": ["コンポーザー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJZ9ZVA05-gde7544620a5-512"
+      },
+      {
+        "Name":"昆布",
+        "Tags": ["コンポーザー"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJYH7SW3W-67ab0ffc7888-512"
       }
     ]
   },
@@ -122,11 +300,47 @@
     "Members": [
       {
         "Name":"ru",
-        "Tags": ["プログラマ"]
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UAQFNTWSF-87e210b5d638-512"
       },
       {
         "Name":"Myaa",
-        "Tags": ["プログラマ"]
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UJMBC7T5X-9bd224bef022-512"
+      },
+      {
+        "Name":"ntk",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UATS58CUE-a6ba25f1571e-512"
+      },
+      {
+        "Name":"Han",
+        "Tags": ["プログラマ"],
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UAQH986SW-37dce30c0f69-512"
+      },
+      {
+        "Name":"kiritannpo/秋田",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UAQMJBA93-7f003e4b04cc-512"
+      },
+      {
+        "Name":"東西南アカリ",
+        "Tags": ["2Dデザイナー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-U01Q7B6HPF0-a790bb84e939-512"
+      },
+      {
+        "Name":"mono",
+        "Tags": ["コンポーザー"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UARU2RDFD-e65bbdc802ed-512"
+      },
+      {
+        "Name":"bokachin",
+        "Tags": ["?"],
+        "Description":"",
+        "Icon":"https://ca.slack-edge.com/T0D490BF0-UAQ0T8W4R-27e83d7e5faf-512"
       }
     ]
   }
