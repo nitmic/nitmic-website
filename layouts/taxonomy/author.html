@@ -1,11 +1,66 @@
 {{ define "main" }}
 <main class="main list" role="main">
 	
-	{{- with .Title }}
-	<header class="main__header post__meta">
-		<h1 class="main__title">{{- partial "svg/author.svg" (dict "class" "meta__icon") -}}{{ . }}</h1>
-	</header>
-	{{- end }}
+	<div class = "author_top_flex">
+		<div class = "author_topleft_flexitem">
+			{{ $title := .Title }}
+				{{ range .Site.Data.member }}
+					{{ range .Members }}
+						{{ if eq .Name $title }}
+						{{ if .Icon}}
+								<img class = "author_icon_img" src="{{.Icon}}" alt="">
+							{{ end }}
+						{{ end }}
+					{{ end }}
+				{{ end }}
+
+			<div class = "author_linkicon">
+				{{ range .Site.Data.member }}
+					{{ range .Members }}
+						{{ if eq .Name $title }}
+
+								{{ if .Twitter}}
+									<a href="{{.Twitter}}">
+										<img src="/images/parts/twitter.png" alt="">
+									</a>
+								{{ end }}
+								{{ if .Homepage}}
+									<a href="{{.Homepage}}">
+										<img src="/images/parts/homepage.png" alt="">
+									</a>
+								{{ end }}
+								{{ if .Git}}
+									<a href="{{.Git}}">
+										<img src="/images/parts/GitHub-Mark.png" alt="">
+									</a>
+								{{ end }}
+
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			</div>
+		</div>
+
+		<div class = "author_topright_flexitem">
+			{{- with .Title }}
+			<header class="main__header__author2">
+				<h1 class="main__title__author">{{ . }}</h1>
+			</header>
+			{{- end }}
+			{{ range .Site.Data.member }}
+				{{ range .Members }}
+					{{ if eq .Name $title }}
+						{{ if .Description}}
+							<p class = "nomargin">{{.Description}}</p>
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		</div>
+	</div>
+
+
+
 	{{- with .Content }}
 	<div class="content main__content clearfix">
 		{{ . }}

@@ -1,27 +1,22 @@
-
-<div class="card">
-    {{ $name := .Name}}
-
-    {{ with .Thumbnail }}
-    <img class="thumbnail" src="{{ . }}">
-    {{ end }}
-    
-    <a href = "/authors/{{ urlize $name }}"> {{ $name }}</a>
-
-    <!--
-    {{ range .Tags }}
-        [{{ . }}]
-    {{ end }}
-
-    {{ .Description | markdownify }}
-
-    {{ with .SNS.Twitter }}
-        <a href="{{ . }}" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-          {{ partial "svg/twitter.svg" }}
-        </a>
-    {{ end }}
-    -->
-
-
-</div>
+{{ $name := .Name}}
+<a class="card" href = "/authors/{{ urlize $name }}"> 
+    <div class = "card_flex">
+        {{if .Icon}}
+            <img class = "memberList_icon_img" src="{{ .Icon }}" alt="a">
+        {{end}}
+        <div class = "memberList_indent">
+            <div class = "memberList_indent_item1">{{ $name }}</div>
+            <div class = "memberList_indent_item2">
+                {{ range .Tags }}
+                    [{{ . }}]
+                {{ end }}
+            </div>
+        </div>
+        <!-- {{ with .SNS.Twitter }}
+            <a href="{{ . }}" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+              {{ partial "svg/twitter.svg" }}
+            </a>
+        {{ end }} -->
+    </div>
+</a>
 

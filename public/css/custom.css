@@ -82,9 +82,15 @@ body {
 	min-width: 0;
 }
 
+/*
+.card{
+	/* background-color: #000;
+}
+*/
+
 .sidebar {
-	-webkit-flex: 1 0 31.66%;
-	flex: 1 0 31.66%;
+	-webkit-flex: 1 0 21.66%;		/* 初期値：31.6% */
+	flex: 1 0 21.66%;				/* 初期値：31.6% */
 	-webkit-order: 2;
 	order: 2;
 	min-width: 0;
@@ -205,6 +211,10 @@ hr {
 p {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
+}
+
+p.nomargin{
+	margin: 0;
 }
 
 b,
@@ -578,9 +588,30 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-bottom: 1.25rem;
 }
 
+.post__header2,
+.main__header2{
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+	border-bottom: 2px solid #bbbbbb;
+}
+
+.main__header__author {
+	margin: 0 0 0 5%;
+}
+
+.main__header__author2 {
+	margin: 0 0 0.5rem 0;
+}
+
 .main__title {
 	font-size: 28px;
 	font-size: 1.75rem;
+}
+
+.main__title__author {
+	font-size: 28px;
+	font-size: 1.75rem;
+	margin: 0;
 }
 
 .main__content {
@@ -1394,9 +1425,10 @@ textarea {
 
 /* カード一覧 */
 .cards {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*align-items:flex-start;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  justify-content: space-around;
 }
 
 /* カード */
@@ -1404,16 +1436,41 @@ textarea {
   /*display: flex;*/
   /* サムネイル, ドキュメント(名前、タグ、description, SNSアイコンなど)、を縦に並べる */
   flex-direction: column;
-
+  background-color:white ;
   flex: 0 0 30%;
-  margin: 0.6%;
+  margin: 1%;
   display: inline-block;
+  border-radius: 15px;
+  box-shadow: 0 5px 14.5px 0 rgba(0, 0, 0, .5);
 }
+
+.memberList_icon_img{
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+
 /* カード(スマホ) */
 @media screen and (max-width: 600px) {
+	/* cssに書く順番がかかわる使用あり*/
   .card {
     flex: 0 0 100%;
   }
+  .card_flex{
+	  display: flex;
+	  align-items: center;
+  }
+  .memberList_icon_img{
+	width: 20%;
+	min-width: 70px;
+	border-radius: 15px 0 0 15px;
+   }
+   .memberList_indent{
+	   width: 50%;
+	   margin: 0;
+   }
+   .member_item{
+	width:30%
+   }
 }
 
 .card > img.thumbnail {
@@ -1458,4 +1515,68 @@ textarea {
 }
 .link-external:hover {
   fill: #3088d4;
+}
+
+/* ------------------------------------------------------ */
+.top_header_image{
+	margin-bottom: 5em;
+}
+
+.author_icon_img{
+	width: 100%;
+	border-radius: 30%;
+}
+
+.author_top_flex{
+	display: flex;
+	border-bottom: 1px solid #bbbbbb;
+	margin-bottom: 2%;
+	padding-bottom: 2%;
+}
+
+.author_topleft_flexitem{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: center;
+	min-width: 80px;
+}
+
+.author_topright_flexitem{
+	width: 95%;
+	padding: 0 0 1% 5%;
+}
+
+.memberList_indent{
+	margin: 0 auto;
+}
+
+.author_linkicon{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.author_linkicon a{
+	width: 33.33%;
+	margin: 5%;
+}
+
+.members{
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 2%;
+}
+
+.memberList_indent{
+	display: flex;
+	justify-content: center;
+	flex-flow:column;
+}
+
+.memberList_indent_item1,
+.memberList_indent_item2{
+	text-align: center;
 }
