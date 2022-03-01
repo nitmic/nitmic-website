@@ -1444,8 +1444,8 @@ textarea {
   /* サムネイル, ドキュメント(名前、タグ、description, SNSアイコンなど)、を縦に並べる */
   flex-direction: column;
   background-color:white ;
-  flex: 0 0 30%;
-  margin: 1%;
+  flex: 0 0 22%;
+  margin: 1.5%;
   display: inline-block;
   border-radius: 15px;
   box-shadow: 0 5px 14.5px 0 rgba(0, 0, 0, .5);
@@ -1457,7 +1457,7 @@ textarea {
 }
 
 /* カード(スマホ) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	/* cssに書く順番がかかわる使用あり*/
   .card {
     flex: 0 0 100%;
