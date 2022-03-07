@@ -4,7 +4,7 @@ description = "Hugo, the world’s fastest framework for building websites"
 date = "2022-02-26"
 menu = "main"
 author = "tamaki"
-weight = "100"
+weight = "2"
 +++
 
 ## 活動場所
