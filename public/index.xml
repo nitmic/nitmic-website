@@ -6,7 +6,7 @@
     <description>Recent content on NITMic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NITMicについて</title>
       <link>http://nitmic.club.nitech.ac.jp/top/about/</link>
@@ -14,6 +14,33 @@
       
       <guid>http://nitmic.club.nitech.ac.jp/top/about/</guid>
       <description>名古屋工業大学コンピュータクラブNITMicです。 NITMicの主な活動はゲーム制作です。 部員は👾プログラマ、🎨デザイナー、🎹コンポーザーのいずれかの役職に所属し、 チームを組んで、コンテストや学校祭に向けてゲームを作成しています。 また、#nitmic1draw</description>
+    </item>
+    
+    <item>
+      <title>アクセス</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/access/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/access/</guid>
+      <description>活動場所 部室 ・名古屋工業大学御器所キャンパス ・55号館4階 ・第10共用室 お問い合わせ お問い合わせは下記のメールアドレス、 もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。 ➡NITMic公式メールアドレス club.nitmic.@gmail.com ➡NITMic公式ツイッター</description>
+    </item>
+    
+    <item>
+      <title>入部方法</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/join/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/join/</guid>
+      <description>NITMicに興味を持っていただきありがとうございます。 本年度は、オンライン入部というかたちをとっております。 ➡NITMic入部Googleフォーム</description>
+    </item>
+    
+    <item>
+      <title>メンバー</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/member/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/member/</guid>
+      <description>aaaaaaaaaaaaaaaaaaaa</description>
     </item>
     
     <item>
@@ -53,24 +80,6 @@
     </item>
     
     <item>
-      <title>メンバー</title>
-      <link>http://nitmic.club.nitech.ac.jp/top/member/</link>
-      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/top/member/</guid>
-      <description>aaaaaaaaaaaaaaaaaaaa</description>
-    </item>
-    
-    <item>
-      <title>入部方法</title>
-      <link>http://nitmic.club.nitech.ac.jp/top/join/</link>
-      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/top/join/</guid>
-      <description>NITMicに興味を持っていただきありがとうございます。 本年度は、オンライン入部というかたちをとっております。 ➡NITMic入部Googleフォーム</description>
-    </item>
-    
-    <item>
       <title>Myaa制作ゲーム：TuringWorld</title>
       <link>http://nitmic.club.nitech.ac.jp/post/0006/</link>
       <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
@@ -95,15 +104,6 @@
       
       <guid>http://nitmic.club.nitech.ac.jp/post/0005/</guid>
       <description>ゲームの紹介 2019年度工大祭向けに制作したゲームです． 2人対戦型タワーディフェンスゲームで，魔物が最上階にたどり着きライフを3つ失うと負けです． 分身して魔物から自分のタワーを守りつつ，最上階ギリギリで倒した魔物は相手のタワーに送ることができます． チキンレース</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://nitmic.club.nitech.ac.jp/top/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/top/access/</guid>
-      <description></description>
     </item>
     
   </channel>
