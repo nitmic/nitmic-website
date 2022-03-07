@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tops on NITMic</title>
+    <link>http://nitmic.club.nitech.ac.jp/top/</link>
+    <description>Recent content in Tops on NITMic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NITMicについて</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/about/</link>
+      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/about/</guid>
+      <description>名古屋工業大学コンピュータクラブNITMicです。 NITMicの主な活動はゲーム制作です。 部員は👾プログラマ、🎨デザイナー、🎹コンポーザーのいずれかの役職に所属し、 チームを組んで、コンテストや学校祭に向けてゲームを作成しています。 また、#nitmic1draw</description>
+    </item>
+    
+    <item>
+      <title>メンバー</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/member/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/member/</guid>
+      <description>aaaaaaaaaaaaaaaaaaaa</description>
+    </item>
+    
+    <item>
+      <title>入部方法</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/join/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/join/</guid>
+      <description>NITMicに興味を持っていただきありがとうございます。 本年度は、オンライン入部というかたちをとっております。 ➡NITMic入部Googleフォーム</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://nitmic.club.nitech.ac.jp/top/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/access/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

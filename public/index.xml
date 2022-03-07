@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 25 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NITMicについて</title>
-      <link>http://nitmic.club.nitech.ac.jp/about/</link>
+      <link>http://nitmic.club.nitech.ac.jp/top/about/</link>
       <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://nitmic.club.nitech.ac.jp/about/</guid>
+      <guid>http://nitmic.club.nitech.ac.jp/top/about/</guid>
       <description>名古屋工業大学コンピュータクラブNITMicです。 NITMicの主な活動はゲーム制作です。 部員は👾プログラマ、🎨デザイナー、🎹コンポーザーのいずれかの役職に所属し、 チームを組んで、コンテストや学校祭に向けてゲームを作成しています。 また、#nitmic1draw</description>
     </item>
     
@@ -53,11 +53,20 @@
     </item>
     
     <item>
-      <title>入部方法</title>
-      <link>http://nitmic.club.nitech.ac.jp/join/</link>
+      <title>メンバー</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/member/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://nitmic.club.nitech.ac.jp/join/</guid>
+      <guid>http://nitmic.club.nitech.ac.jp/top/member/</guid>
+      <description>aaaaaaaaaaaaaaaaaaaa</description>
+    </item>
+    
+    <item>
+      <title>入部方法</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/join/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/join/</guid>
       <description>NITMicに興味を持っていただきありがとうございます。 本年度は、オンライン入部というかたちをとっております。 ➡NITMic入部Googleフォーム</description>
     </item>
     
@@ -86,6 +95,15 @@
       
       <guid>http://nitmic.club.nitech.ac.jp/post/0005/</guid>
       <description>ゲームの紹介 2019年度工大祭向けに制作したゲームです． 2人対戦型タワーディフェンスゲームで，魔物が最上階にたどり着きライフを3つ失うと負けです． 分身して魔物から自分のタワーを守りつつ，最上階ギリギリで倒した魔物は相手のタワーに送ることができます． チキンレース</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://nitmic.club.nitech.ac.jp/top/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/access/</guid>
+      <description></description>
     </item>
     
   </channel>
