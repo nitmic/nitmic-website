@@ -1,12 +1,20 @@
 
-<div class="card">
-    {{ $name := .Name}}
+{{ $name := .Name}}
 
+<div class="card">
+
+    <!--
     {{ with .Thumbnail }}
     <img class="thumbnail" src="{{ . }}">
     {{ end }}
+    -->
     
-    <a href = "/authors/{{ urlize $name }}"> {{ $name }}</a>
+    <a href = "/authors/{{ urlize $name }}" class = "member_name">
+        {{if .Icon}}
+        <img class = "member_icon_img" src="{{ .Icon }}" alt="a">
+        {{end}}
+        {{ $name }}
+    </a>
 
     <!--
     {{ range .Tags }}
