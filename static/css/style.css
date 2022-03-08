@@ -19,3 +19,12 @@
 }
 
 /* カード */
+
+.member_icon_img {
+	width: 20px;
+	height: 20px;
+}
+
+.member_name {
+	font-weight: 500;
+}
