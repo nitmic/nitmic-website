@@ -19,6 +19,7 @@ summaryLength = 130
 
 [taxonomies]
   author = "authors"
+  member = "members"
   tag = "tags"
   category = "categories"
 

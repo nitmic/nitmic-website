@@ -1,0 +1,47 @@
+{{ define "main" }}
+<main class="main list" role="main">
+
+	{{ $title := .Title }}
+	{{ $member := .Site.Data.member }}
+	
+
+	{{- with .Title }}
+	<header class="main__header">
+		<h1 class="main__title">
+			
+			<!--
+				{{- partial "svg/author.svg" (dict "class" "meta__icon") -}}
+			-->
+
+			{{ range $member }}
+				{{ range .Members }}
+					{{ if eq .Name $title }}
+						{{ if .Icon}}
+							<img class = "author_icon_img" src="{{.Icon}}" alt="">
+						{{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+	
+			{{ . }}
+		</h1>
+	</header>
+	{{- end }}
+
+	<!--
+	{{- with .Content }}
+	<div class="content main__content clearfix">
+		{{ . }}
+	</div>
+	{{- end }}
+	-->
+
+	<p>{{$title}}の関連記事</p>
+
+	{{- range .Paginator.Pages }}
+		{{- .Render "summary" }}
+	{{- end }}
+
+</main>
+{{ partial "pagination.html" . }}
+{{ end }}

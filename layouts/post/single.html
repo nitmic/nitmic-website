@@ -7,10 +7,11 @@
 			{{- with .Params.lead }}
 			<p class="post__lead">{{ . }}</p>
 			{{- end }}
-
+			<!--
 			{{ with partial "post_meta.html" . -}}
 			<div class="post__meta meta">{{ . }}</div>
 			{{- end }}
+			-->
 
 		</header>
 		{{ partial "post_thumbnail.html" (dict "class" "post" "page" .) }}
@@ -18,6 +19,11 @@
 		<div class="content post__content clearfix">
 			{{ .Content }}
 		</div>
+
+			{{ with partial "post_meta.html" . -}}
+			<div class="post__meta meta">{{ . }}</div>
+			{{- end }}
+
 		{{- if .Params.tags }}
 		<footer class="post__footer">
 			{{ partial "post_tags.html" . }}
