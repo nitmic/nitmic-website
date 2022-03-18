@@ -11,7 +11,11 @@
 	<meta property="twitter:card" content="summary" />
 	<meta property="og:title" content="{{ .Title }}" />
 	<meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+	{{ if .Params.thumbnail }}
 	<meta property="og:image" content="http://nitmic.club.nitech.ac.jp/{{ .Params.thumbnail }}" />
+	{{ else }}
+	<meta property="og:image" content="http://nitmic.club.nitech.ac.jp/logo/logo_4.png" />
+	{{ end }}
 	<meta property="twitter:url" content="{{ .Permalink }}" />
 	<meta property="twitter:site" content="@nitmic_twi" />
 	<meta property="twitter:creator" content="@nitmic_twi" /> 
