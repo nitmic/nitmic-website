@@ -15,8 +15,7 @@
 				{{- if gt $index 0 }}, {{ end -}}
 			-->
 				{{ $title := .Title}}
-				{{if ne $index 0}}
-				{{- if gt $index 1 }}{{ end -}}
+				{{if ne $index -1}}
 				<a class="meta__link" href="{{ .RelPermalink }}" rel="category">
 					{{ range .Site.Data.member }}
 						{{ range .Members }}
