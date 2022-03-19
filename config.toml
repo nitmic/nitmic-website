@@ -35,7 +35,7 @@ summaryLength = 130
   readmore = false # Show "Read more" button in list if true
   authorbox = false
   pager = true
-  post_meta = ["date", "categories" , "author"] # Order of post meta information
+  post_meta = ["date","author","categories"] # Order of post meta information
   highlightColor = "#ff9305" # ハイライトカラーを変更
   customCSS = ["css/style.css"]
 

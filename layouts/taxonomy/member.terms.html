@@ -1,9 +1,0 @@
-{{ define "main" }}
-
-{{ range .Data.Pages }}
-<li>
-<a href="{{ $.Site.BaseURL }}/authors/{{ .Title }}">{{ .Title }}</a>
-</li>
-{{ end }}
-
-{{ end }}
