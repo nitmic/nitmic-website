@@ -27,14 +27,16 @@
 			{{ .Content }}
 		</div>
 
-		<div class="post__meta">
+		<br>
+		<hr>
+
+		<div>
 			{{ partial "post_meta/members" . }}
 			{{- if .Params.tags }}
 			<footer class="post__footer">
 				{{ partial "post_tags.html" . }}
 			</footer>
 			{{- end }}
-			
 		</div>
 
 	</article>

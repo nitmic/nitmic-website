@@ -5,7 +5,6 @@ date = "2022-02-25"
 #categories = ["Development"]
 #tags = ["2022","HUGO","ホームページ"]
 sidebar = "right"
-authors = ["dokudami"]
 menu= "main"
 weight = "1"
 +++

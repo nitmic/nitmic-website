@@ -292,7 +292,7 @@
       {
         "Name":"真言",
         "Tags": ["コンポーザー"],
-        "Icon":"/images/members_icon/noicon_blue.png"
+        "Icon":"/images/members_icon/2019/shingon.png"
       },
       {
         "Name":"昆布",
@@ -325,7 +325,7 @@
         "Icon":"/images/members_icon/2018/Han.jpg"
       },
       {
-        "Name":"kiritannpo/秋田",
+        "Name":"kiritannpo",
         "Tags": ["2Dデザイナー"],
         "Description":"",
         "Icon":"/images/members_icon/2018/kiritannpo.png"
@@ -335,6 +335,12 @@
         "Tags": ["コンポーザー"],
         "Description":"",
         "Icon":"/images/members_icon/2018/mono.png"
+      },
+      {
+        "Name":"dotsome",
+        "Tags": ["コンポーザー"],
+        "Description":"",
+        "Icon":"/images/members_icon/2018/dotsome.png"
       },
       {
         "Name":"bokachin",
