@@ -17,11 +17,38 @@
     </item>
     
     <item>
+      <title>こーせー</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/%E3%81%93%E3%83%BC%E3%81%9B%E3%83%BC/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/%E3%81%93%E3%83%BC%E3%81%9B%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>真言</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/%E7%9C%9F%E8%A8%80/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/%E7%9C%9F%E8%A8%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dokudami</title>
       <link>http://nitmic.club.nitech.ac.jp/authors/dokudami/</link>
-      <pubDate>Fri, 25 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/authors/dokudami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tamaki</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/tamaki/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/tamaki/</guid>
       <description></description>
     </item>
     
@@ -71,24 +98,6 @@
     </item>
     
     <item>
-      <title>tamaki</title>
-      <link>http://nitmic.club.nitech.ac.jp/authors/tamaki/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/authors/tamaki/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>こーせー</title>
-      <link>http://nitmic.club.nitech.ac.jp/authors/%E3%81%93%E3%83%BC%E3%81%9B%E3%83%BC/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/authors/%E3%81%93%E3%83%BC%E3%81%9B%E3%83%BC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>東西南アカリ</title>
       <link>http://nitmic.club.nitech.ac.jp/authors/%E6%9D%B1%E8%A5%BF%E5%8D%97%E3%82%A2%E3%82%AB%E3%83%AA/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
@@ -98,20 +107,74 @@
     </item>
     
     <item>
-      <title>真言</title>
-      <link>http://nitmic.club.nitech.ac.jp/authors/%E7%9C%9F%E8%A8%80/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://nitmic.club.nitech.ac.jp/authors/%E7%9C%9F%E8%A8%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>アルエット</title>
       <link>http://nitmic.club.nitech.ac.jp/authors/%E3%82%A2%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88/</link>
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/authors/%E3%82%A2%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bokachin</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/bokachin/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/bokachin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotsome</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/dotsome/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/dotsome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Han</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/han/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/han/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kiritanpo</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/kiritanpo/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/kiritanpo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mono</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/mono/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/mono/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nerune</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/nerune/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/nerune/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kiritannpo</title>
+      <link>http://nitmic.club.nitech.ac.jp/authors/kiritannpo/</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/authors/kiritannpo/</guid>
       <description></description>
     </item>
     
