@@ -110,6 +110,11 @@ body {
 	margin: 0 2.5% 0 0;
 }
 
+.sarch_sidebar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5%;
+}
 .clearfix {
 	display: block;
 }
