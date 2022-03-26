@@ -4,7 +4,7 @@ description = "Hugo, the world’s fastest framework for building websites"
 date = "2022-02-26"
 menu = "main"
 author = "tamaki"
-weight = "100"
+weight = "5"
 +++
 
 ## 活動場所
@@ -13,12 +13,12 @@ weight = "100"
 ・55号館4階  
 ・第10共用室  
 
+{{< image w="600" src="access.jpg" title="" >}}
 
 ## お問い合わせ
 お問い合わせは下記のメールアドレス、  
 もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。  
 　  
-　
 >[➡NITMic公式メールアドレス](mailto:club.nitmic.@gmail.com)  
 club.nitmic.@gmail.com
 
