@@ -6,7 +6,12 @@ author = "Mass"
   [menu.main]
     parent = "gallery"
     name = "デザイナー"
+
+draft = true
 +++
 
-準備中
+# 準備中
+
+ここでは各役職の紹介を行います。  
+完成をお楽しみに。
 <!-- {{< gallery dir="/images/gallery/" />}} {{< load-photoswipe >}} -->
