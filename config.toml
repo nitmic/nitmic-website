@@ -57,3 +57,10 @@ summaryLength = 130
 [Params.widgets.social]
   twitter = "nitmic_twi"
   github = "nitmic-git"
+
+[menu]
+  [[menu.main]]
+    identifier = 'gallery'
+    name = 'ギャラリー'
+    url = '/top/gallery/'
+    weight = 3
