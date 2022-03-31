@@ -1,21 +1,11 @@
 
-/* 元テーマのstyle.cssを上書き */
+/* 元テーマのstyle.cssを上書き つまりはasset\css\custom.cssより優先される*/
 
 
 /* タイトルロゴで NITMIC -> NITMic となるように */
 .logo__text {
 	text-transform: none;
 	margin-right: auto;
-}
-
-
-.sidebar {
-	-webkit-flex: 1 0 21.66%;		/* 初期値：31.6% */
-	flex: 1 0 21.66%;				/* 初期値：31.6% */
-	-webkit-order: 2;
-	order: 2;
-	min-width: 0;
-	margin: 0 0 0 2.5%;
 }
 
 /* カード */
@@ -33,3 +23,20 @@
 .member_name {
 	font-weight: 500;
 }
+
+
+/* サムネイルサイズ調整 */
+.list__thumbnail img {
+    width: 150px;
+    height: 150px;
+    margin-right: 3%;
+    object-fit:cover;
+}
+.post__thumbnail img {
+    width: 800px;
+    height: 200px;
+    margin-right: 3%;
+    object-fit:cover;
+	filter: opacity(60%);
+}
+
