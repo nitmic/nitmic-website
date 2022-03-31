@@ -1,6 +1,6 @@
 +++
 title = "アクセス"
-description = "Hugo, the world’s fastest framework for building websites"
+description = "NITMicアクセス"
 date = "2022-02-26"
 menu = "main"
 author = "tamaki"
@@ -13,7 +13,7 @@ weight = "5"
 ・55号館4階  
 ・第10共用室  
 
-{{< image w="600" src="access.jpg" title="" >}}
+![map](/images/top/access/img_map.jpg)
 
 ## お問い合わせ
 お問い合わせは下記のメールアドレス、  

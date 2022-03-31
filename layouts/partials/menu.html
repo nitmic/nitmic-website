@@ -13,6 +13,7 @@
 		</li>
 		{{- $currentNode := . }}
 		{{- range .Site.Menus.main }}
+			<!-- プルダウン　-->
 			{{- if .Name }}
 				{{if .HasChildren}}
 					<li class="menu__item menu__dropdown{{ if or ( $currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}} menu__item--active {{ end }}">
