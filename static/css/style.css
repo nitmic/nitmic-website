@@ -23,3 +23,19 @@
 .member_name {
 	font-weight: 500;
 }
+
+
+/* サムネイルサイズ調整 */
+.list__thumbnail img {
+    width: 150px;
+    height: 150px;
+    margin-right: 3%;
+    object-fit:cover;
+}
+.post__thumbnail img {
+    width: 800px;
+    height: 200px;
+    margin-right: 3%;
+    object-fit:cover;
+}
+
