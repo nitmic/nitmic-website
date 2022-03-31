@@ -4,7 +4,7 @@ description = "NITMicアクセス"
 date = "2022-02-26"
 menu = "main"
 author = "tamaki"
-weight = "5"
+weight = "2"
 +++
 
 ## 活動場所
@@ -14,6 +14,8 @@ weight = "5"
 ・第10共用室  
 
 ![map](/images/top/access/img_map.jpg)
+
+> 出典：[https://www.nitech.ac.jp/access/campusmap.html](https://www.nitech.ac.jp/access/campusmap.html)
 
 ## お問い合わせ
 お問い合わせは下記のメールアドレス、  

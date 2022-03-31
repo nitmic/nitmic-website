@@ -103,6 +103,11 @@ body {
 	margin: 0 2.5% 0 0;
 }
 
+.sarch_sidebar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5%;
+}
 .clearfix {
 	display: block;
 }
@@ -449,6 +454,10 @@ select {
 }
 
 /* Main menu */
+.menu {
+	border-bottom: 5px solid #ff9305;
+}
+
 .no-js .menu__btn {
 	display: none;
 }
@@ -497,7 +506,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	color: #ff9305;
 }
 
-.menu__list {
+.menu__list,
+.submenu__list{
 	list-style: none;
 	background: #2a2a2a;
 }
@@ -522,6 +532,30 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	color: #fff;
 	text-transform: uppercase;
 }
+
+.menu__list .menu__item .submenu__list {
+	background: #575757;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	max-width: 15rem;
+	transition: all 0.5s ease;
+	border-top: 5px solid #ff9305;
+	display: none;
+  }
+
+.menu__item.menu__dropdown input[type="checkbox"] {
+	display: none;
+  }
+  
+  .menu__list .menu__item:hover > .submenu__list,
+  .menu__list .menu__item:focus-within > .submenu__list,
+  .menu__list .menu__item .submenu__list:hover,
+  .menu__list .menu__item .submenu__list:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+  }
 
 .menu__link:hover {
 	color: #fff;
@@ -550,10 +584,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	transition: visibility .15s ease, transform .15s ease, -webkit-transform .15s ease;
 }
 
-@media screen and (min-width: 767px) {
-	.menu {
-		border-bottom: 5px solid #ff9305;
-	}
+@media screen and (min-width: 500px) {
+
 
 	.menu__btn {
 		display: none;
@@ -576,6 +608,28 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 		border-left: 1px solid rgba(255, 255, 255, .1);
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.menu__item.menu__dropdown .drop-icon {
+	  position: absolute;
+	  right: 1rem;
+	  top: auto;
+	}
+  
+	.menu__item.menu__dropdown input[type="checkbox"] + .submenu__list {
+	  display: none;
+	}
+  
+	.menu__item.menu__dropdown input[type="checkbox"]:checked + .submenu__list {
+	  border: none;
+	  padding-left: 20px;
+	  visibility: visible;
+	  opacity: 1;
+	  display: block;
+	  position: relative;
+	  max-width: 100%;
+	}
+  }
 
 /* Posts/Pages */
 .post__header,
@@ -1230,14 +1284,15 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
 	.wrapper {
 		display: block;
 	}
 
 	.sidebar {
+		display: none;
 		float: none;
-		width: 100%;
+		width: 0;
 		margin: 0;
 	}
 
@@ -1465,3 +1520,5 @@ textarea {
 .link-external:hover {
   fill: #3088d4;
 }
+
+

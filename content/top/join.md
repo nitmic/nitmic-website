@@ -4,7 +4,7 @@ description = "Hugo, the world’s fastest framework for building websites"
 date = "2021-04-08"
 menu = "main"
 author = "dokudami"
-weight = "2"
+weight = "3"
 +++
 
 
@@ -14,3 +14,5 @@ NITMicに興味を持っていただきありがとうございます。
 
 
 >[➡NITMic入部Googleフォーム](https://forms.gle/hsbwtw6XqE9chdSK6)  
+
+入部フォーム送信後、担当者からメールをさせて頂きますので、そちらをお待ちください。
