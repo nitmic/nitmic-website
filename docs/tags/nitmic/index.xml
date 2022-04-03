@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NITMic</title>
+    <link>http://nitmic.club.nitech.ac.jp/tags/nitmic/</link>
+    <description>Recent content on NITMic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/tags/nitmic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NITMicのSoundcloudアカウントを作りました！</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0008/</link>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0008/</guid>
+      <description>概要 タイトルの通り、NITMicのSoundcloudアカウントを作り、 そこにコンポーザーの制作したゲームBGMを投稿することにしました。 理由は？ 主だった理由を上げますと、 新入生を含む外部から、活動内容が見えにくい 後進の為に過去の足跡を残しておきたい の2点です</description>
+    </item>
+    
+    <item>
+      <title>Twinst</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0004/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0004/</guid>
+      <description>ゲームの紹介 2021年度日本ゲーム大賞向けに制作したゲームです． Myaaの春休みが忙しかったため，企画の立ち上げが4月からとなり，約2か月間での制作となりました． 学業が忙しい中，多くの3Dデザイナー，2Dデザイナー，コンポーザーの方に参加して頂き，本当に感謝し</description>
+    </item>
+    
+    <item>
+      <title>NITMicオンライン説明会をしました！</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0003/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0003/</guid>
+      <description>さて、4月も後半。 入学の時期がいつのまにか、窓から見える景色のように後方へと一瞬で過ぎ去っていきました。 今年&amp;rsquo;も&amp;rsquo;沈黙の校舎に音が響くことを祈りながら、奴が世界で引き起こした「ぱんでみーな惨劇」を恨むことでしょう。 まだ何も話してませんが</description>
+    </item>
+    
+    <item>
+      <title>TuringWorld</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0006/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0006/</guid>
+      <description>ゲームの紹介 2020年度オンライン工大祭向けに制作したゲームです． 箱庭世界で，対話AIとおしゃべりができます． 制作メンバー プログラマー：Myaa, dokudami 3Dデザイナー：タマキ（キャラクター），mitsuya（城） コンポーザー：bokachin デバッガー ：協力してく</description>
+    </item>
+    
+    <item>
+      <title>From:Atlas</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0007/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0007/</guid>
+      <description>ゲーム紹介 2020年度日本ゲーム大賞向けに制作したゲームです． 制作期間は3か月です． 紹介動画 制作メンバー プログラマー：Myaa, Han 2Dデザイナー：kiritanpo 3Dデザイナー：nerune コンポーザー：mono,dotsome デバッガー ：協力してくれたNI</description>
+    </item>
+    
+    <item>
+      <title>DefenceWitches</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0005/</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0005/</guid>
+      <description>ゲームの紹介 2019年度工大祭向けに制作したゲームです． 2人対戦型タワーディフェンスゲームで，魔物が最上階にたどり着きライフを3つ失うと負けです． 分身して魔物から自分のタワーを守りつつ，最上階ギリギリで倒した魔物は相手のタワーに送ることができます． チキンレース</description>
+    </item>
+    
+  </channel>
+</rss>
