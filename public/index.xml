@@ -6,7 +6,7 @@
     <description>Recent content on NITMic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://nitmic.club.nitech.ac.jp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NITMicについて</title>
       <link>http://nitmic.club.nitech.ac.jp/top/about/</link>
@@ -26,12 +26,30 @@
     </item>
     
     <item>
+      <title>メンバー</title>
+      <link>http://nitmic.club.nitech.ac.jp/top/member/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/top/member/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>入部方法</title>
       <link>http://nitmic.club.nitech.ac.jp/top/join/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://nitmic.club.nitech.ac.jp/top/join/</guid>
       <description>NITMicに興味を持っていただきありがとうございます。 本年度は、オンライン入部というかたちをとっております。 ➡NITMic入部Googleフォーム 入部フォーム送信後、担当者からメールをさせて頂きますので、そちらをお待ちください。</description>
+    </item>
+    
+    <item>
+      <title>新歓ポスター2022</title>
+      <link>http://nitmic.club.nitech.ac.jp/post/0010/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://nitmic.club.nitech.ac.jp/post/0010/</guid>
+      <description>祝ご入学 新入生の皆様、ご入学おめでとうございます🌸 先日の入学式はいかがだったでしょうか？ 鶴舞公園の公会堂で行われる入学式、現2,3年は対面での入学式を経験できなかったので、ちょっとばかし羨ましいです｡°(°´ω`°)°｡。入学式でのビラ配りも今年は禁止されてし</description>
     </item>
     
     <item>
