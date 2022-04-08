@@ -13,7 +13,7 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 # HUGOの書き出し先ファイルを設定
-publishDir = "docs"
+# publishDir = "docs"
 
 
 #日本語用の.Summary設定
