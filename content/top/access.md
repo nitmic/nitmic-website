@@ -17,14 +17,18 @@ weight = "3"
 ##### マップ
 
 {{< load-photoswipe >}}
-{{< figure link="/images/top/access/map.png" >}}
+{{< gallery >}}
+    {{< figure link="/images/top/access/map.png" caption="地図">}}
+{{< /gallery >}}
 
+名古屋工業大学の北西に位置する55号館（課外活動棟）4階に部室を置かせてもらっております。  
+講義の空きコマで暇な部員がいたりします。  
+入部希望者の方で部室を見学したい方は、ご遠慮なくお越しください。歓迎いたします！
 　
 ## お問い合わせ
 お問い合わせは下記のメールアドレス、  
-もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。  
+もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。ｍ（＿ ＿）ｍ
 　  
->[➡NITMic公式メールアドレス](mailto:club.nitmic.@gmail.com)  
-club.nitmic.@gmail.com
+> club.nitmic.@gmail.com
 
 >[➡NITMic公式ツイッター](https://twitter.com/nitmic_twi)  
