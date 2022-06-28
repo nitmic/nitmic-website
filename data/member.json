@@ -249,11 +249,6 @@
         "Icon":"/images/members_icon/2019/おがとも.png"
       }, 
       {
-        "Name":"nerune",
-        "Tags": ["プログラマ"],
-        "Icon":"/images/members_icon/2019/nerune.jpg"
-      }, 
-      {
         "Name":"ホソヤ",
         "Tags": ["プログラマ"],
         "Icon":"/images/members_icon/2019/ホソヤ.jpg"
@@ -324,6 +319,11 @@
         "Tags": ["プログラマ"],
         "Icon":"/images/members_icon/2018/Han.jpg"
       },
+      {
+        "Name":"nerune",
+        "Tags": ["プログラマ"],
+        "Icon":"/images/members_icon/2019/nerune.jpg"
+      }, 
       {
         "Name":"kiritannpo",
         "Tags": ["2Dデザイナー"],
