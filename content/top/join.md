@@ -13,6 +13,6 @@ NITMicに興味を持っていただきありがとうございます。
 本年度は、オンライン入部というかたちをとっております。
 
 
->[➡NITMic入部Googleフォーム](https://forms.gle/hsbwtw6XqE9chdSK6)  
+>[➡NITMic入部Googleフォーム](https://forms.gle/rTbMbkDtf9iy91vr5)  
 
 入部フォーム送信後、担当者からメールをさせて頂きますので、そちらをお待ちください。
