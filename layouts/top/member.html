@@ -10,6 +10,8 @@
 
     {{ range .Site.Data.member }}
 
+        {{ if (and (ge .Year 2022) (le .Year 2024)) }}
+
         {{ with .Year }}
             <h4>{{ . }}入学</h4>
         {{ end }}
@@ -21,6 +23,8 @@
         </div>
 
         <br>
+
+        {{ end }}
         
     {{ end }}
 
