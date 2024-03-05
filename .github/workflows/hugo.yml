@@ -4,7 +4,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - workflow_test
+      - main
 
 jobs:
   build:
@@ -50,4 +50,4 @@ jobs:
           git config --global user.email "action@github.com"
           git add .
           git commit -m "Auto-publish changes from GitHub Actions"
-          git push origin workflow_test
+          git push origin main
