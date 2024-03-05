@@ -48,7 +48,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add .
+          git add ./public
           git commit -m "Auto-publish changes from GitHub Actions"
           git push origin develop
 
