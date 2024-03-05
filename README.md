@@ -1,5 +1,7 @@
 # nitmic-hp
 
+URL：http://nitmic.club.nitech.ac.jp/
+
 ## Overview
 
 - **名古屋工業大学コンピュータ俱楽部NITMic** のホームページ開発リポジトリです
