@@ -1,29 +1,27 @@
 {{ define "main" }}
 
-<main class="main" role="main">
-    <article class="post">
-        <header class="post__header">
-            <h1 class="post__title">{{ .Title }}</h1>
-        </header>
-    </article>
-</main>
+    <main class="main" role="main">
+        <article class="post">
+            <header class="post__header">
+                <h1 class="post__title">{{ .Title }}</h1>
+            </header>
+        </article>
+    </main>
 
-{{ $member := getJSON
-"https://script.google.com/macros/s/AKfycbzNTGLHVSIbHjuGViDGTUDMLYn8PWaHNpG9mbc4Jpa5HgyFbtx_Sqyjz8IG2cFzNWCYyw/exec"
-}}
+    {{ range .Site.Data.member }}
 
-<!-- このurlはdokudamiの試作です -->
+        {{ with .Year }}
+            <h4>{{ . }}入学</h4>
+        {{ end }}
 
-{{ range $member }}
-{{ with .Year }}
-<h4>{{ . }}入学</h4>
-{{ end }}
-<div class="cards">
-    {{ range .Members }}
-    {{ partial "member.html" . }}
+        <div class="cards">
+            {{ range .Members }}
+                {{ partial "member.html" . }}
+            {{ end }}
+        </div>
+
+        <br>
+        
     {{ end }}
-</div>
-<br>
-{{ end }}
 
 {{ end }}
