@@ -24,7 +24,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Add Mainroad Theme
-        run: git submodule add https://github.com/Vimux/Mainroad.git themes/mainroad 
+        run: git submodule update --remote themes/mainroad
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
