@@ -60,3 +60,8 @@ summaryLength = 130
 [Params.widgets.social]
   twitter = "nitmic_twi"
   github = "nitmic-git"
+
+[[Params.widgets.social.custom]]
+  title = " Booth"
+  icon = "booth_icon.svg"
+  url = "https://nitmic.booth.pm/"
