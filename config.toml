@@ -17,7 +17,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 
 #日本語用の.Summary設定
-hasCJKLanguage = true 
+hasCJKLanguage = true
 summaryLength = 130
 
 [taxonomies]
@@ -25,11 +25,6 @@ summaryLength = 130
   member = "members"
   tag = "tags"
   category = "categories"
-
-[Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "img/avatar.png"
 
 [Params]
   description = "名古屋工業大学コンピュータ倶楽部NITMic公式ホームページ" # Description of your site
