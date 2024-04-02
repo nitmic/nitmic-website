@@ -1,10 +1,9 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to main branch /public
 
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   build:
@@ -15,7 +14,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
@@ -38,11 +37,13 @@ jobs:
         run: |
           hugo \
             --gc \
-            --minify        
+            --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
+      - name: Remove /public from .gitignore
+        run: sed -i '/\/public/d' .gitignore
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Action"
@@ -50,4 +51,5 @@ jobs:
           git add ./public
           git commit -m "Auto-publish changes from GitHub Actions"
           git push origin develop
-
+      - name: Restore /public in .gitignore
+        run: echo "/public" >> .gitignore
