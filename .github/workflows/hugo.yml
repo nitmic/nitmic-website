@@ -70,12 +70,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Get Hostname
-        run: echo "Hostname $(hostname)"
+      - name: Get GitHub Actions IP Address
+        run: echo "GitHub Actions IP Address: ${{ job.container.network.ip }}"
         
-      - name: Get IP Address (Linux)
-        if: runner.os == 'Linux'
-        run: ip -o -4 addr show scope global | awk '{print $4}'
+      - name: Get GitHub Actions Domain
+        run: echo "GitHub Actions Domain: ${{ runner.domain }}"
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
