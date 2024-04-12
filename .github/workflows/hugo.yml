@@ -70,8 +70,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Scan SSH Key
-        run: ssh-keyscan nitmic.club.nitech.ac.jp
+      - name: Get Hostname
+        run: echo "Hostname $(hostname)"
+        
+      - name: Get IP Address (Linux)
+        if: runner.os == 'Linux'
+        run: ip -o -4 addr show scope global | awk '{print $4}'
+
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         with:
