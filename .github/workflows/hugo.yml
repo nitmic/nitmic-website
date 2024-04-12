@@ -71,10 +71,10 @@ jobs:
     needs: build
     steps:
       - name: Get GitHub Actions IP Address
-        run: echo "GitHub Actions IP Address: ${{ job.container.network.ip }}"
+        run: echo "GitHub Actions IP Address ${{ job.container.network.ip }}"
         
       - name: Get GitHub Actions Domain
-        run: echo "GitHub Actions Domain: ${{ runner.domain }}"
+        run: echo "GitHub Actions Domain ${{ runner.domain }}"
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
