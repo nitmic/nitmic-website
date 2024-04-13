@@ -4,26 +4,31 @@ description: "NITMicアクセス"
 date: "2022-04-08"
 menu: "main"
 author: "tamaki"
+thumbnail: "/images/top/access/googlemap.png"
 weight: "3"
 ---
 
 ## 活動場所
 
-##### 部室
+### 部室
 
-・〒 466-8555 名古屋市昭和区御器所町
-・名古屋工業大学御器所キャンパス
-・55 号館 4 階
-・第 10 共用室
-
-##### マップ
+〒 466-8555 名古屋市昭和区御器所町 名古屋工業大学御器所キャンパス 55 号館 4 階 第 10 共用室
 
 <!-- prettier-ignore-start -->
 {{< load-photoswipe >}}
 {{< gallery >}}
     {{< figure link="/images/top/access/map.png" caption="地図">}}
+    {{< figure link="/images/top/access/googlemap.png" caption="航空写真">}}
 {{< /gallery >}}
 <!-- prettier-ignore-end -->
+
+#### 写真
+
+{{< gallery >}}
+    {{< figure link="/images/top/access/bushitsu1.png" caption="部室写真１">}}
+    {{< figure link="/images/top/access/bushitsu2.png" caption="部室写真２">}}
+    {{< figure link="/images/top/access/nuigurumi.png" caption="部室に並ぶぬいぐるみ">}}
+{{< /gallery >}}
 
 名古屋工業大学の北西に位置する 55 号館（課外活動棟）4 階に部室を置かせてもらっております。
 講義の空きコマで暇な部員がいたりします。
@@ -34,6 +39,6 @@ weight: "3"
 お問い合わせは下記のメールアドレス、
 もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。ｍ（＿ ＿）ｍ
 
-> club.nitmic.@gmail.com
+- club.nitmic.@gmail.com
+- https://twitter.com/nitmic_twi
 
-> [➡NITMic 公式ツイッター](https://twitter.com/nitmic_twi)
