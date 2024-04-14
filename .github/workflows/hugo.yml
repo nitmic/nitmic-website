@@ -70,13 +70,7 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
-      - name: Setup SSH Key
+      - name: Copy build files
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-      - name: Check SSH
-        run: ssh -o StrictHostKeyChecking=no -p 22 ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "ls -la; whoami"
+          mkdir -p ~/${{ secrets.REMOTE_TARGET }}
+          cp -r public/* ~/${{ secrets.REMOTE_TARGET }}
