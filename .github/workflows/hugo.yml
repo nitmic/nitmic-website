@@ -63,14 +63,19 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          name: public
+          path: public/
 
   # Deployment job
   deploy:
     runs-on: self-hosted
     needs: build
     steps:
-      - name: Copy build files
+      - name: Download build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+      - name: Copy build artifacts
         run: |
           mkdir -p ~/${{ secrets.REMOTE_TARGET }}
           cp -r public/* ~/${{ secrets.REMOTE_TARGET }}
