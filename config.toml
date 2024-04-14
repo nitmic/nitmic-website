@@ -4,7 +4,7 @@ baseURL = 'https://nitmic.club.nitech.ac.jp/'
 
 # theme = "mainroad"
 
-baseurl = "/"
+# baseurl = "/"
 title = "NITMic" # NITMicに変更
 languageCode = "ja" # jaに変更
 paginate = "10" # Number of posts per page
