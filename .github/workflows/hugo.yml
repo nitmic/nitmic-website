@@ -78,4 +78,5 @@ jobs:
       - name: Copy build artifacts
         run: |
           mkdir -p ~/${{ secrets.REMOTE_TARGET }}
-          cp -r public/* ~/${{ secrets.REMOTE_TARGET }}
+          pwd
+          ls -la
