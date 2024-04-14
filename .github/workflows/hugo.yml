@@ -75,8 +75,4 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: public
-      - name: Copy build artifacts
-        run: |
-          mkdir -p ~/${{ secrets.REMOTE_TARGET }}
-          pwd
-          ls -la
+          path: ${{ secrets.REMOTE_TARGET }}
