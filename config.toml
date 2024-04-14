@@ -60,3 +60,8 @@ summaryLength = 130
   title = " Booth"
   icon = "booth_icon.svg"
   url = "https://nitmic.booth.pm/"
+
+[[Params.widgets.social.custom]]
+  title = "SoundCloud"
+  icon = "soundcloud_icon.svg"
+  url = "https://soundcloud.com/mic-nit"
