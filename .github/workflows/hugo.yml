@@ -79,3 +79,4 @@ jobs:
           rm -rf ${{ secrets.REMOTE_TARGET }}
           mkdir -p ${{ secrets.REMOTE_TARGET }}
           cp -r ./* ${{ secrets.REMOTE_TARGET }}
+          rm -rf ./*
