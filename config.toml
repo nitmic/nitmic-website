@@ -65,3 +65,8 @@ summaryLength = 130
   title = "SoundCloud"
   icon = "soundcloud_icon.svg"
   url = "https://soundcloud.com/mic-nit"
+
+[[Params.widgets.social.custom]]
+  title = "Zenn"
+  icon = "logo-only-white.svg"
+  url = "https://zenn.dev/p/nitmic"
