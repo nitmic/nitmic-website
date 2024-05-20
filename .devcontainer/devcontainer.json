@@ -23,6 +23,8 @@
 		}
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/hugo:1": {}
+		"ghcr.io/devcontainers/features/hugo:1": {
+			"version": "0.115.4"
+		}
 	}
 }
