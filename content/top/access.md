@@ -39,6 +39,6 @@ weight: "3"
 お問い合わせは下記のメールアドレス、
 もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。ｍ（＿ ＿）ｍ
 
-- club.nitmic.@gmail.com
+- club.nitmic@gmail.com
 - https://twitter.com/nitmic_twi
 
