@@ -54,7 +54,7 @@ summaryLength = 130
 
 [Params.widgets.social]
   twitter = "nitmic_twi"
-  github = "nitmic-git"
+  github = "nitmic"
 
 [[Params.widgets.social.custom]]
   title = " Booth"
@@ -64,7 +64,7 @@ summaryLength = 130
 [[Params.widgets.social.custom]]
   title = "SoundCloud"
   icon = "soundcloud_icon.svg"
-  url = "https://soundcloud.com/mic-nit"
+  url = "https://soundcloud.com/nitmic"
 
 [[Params.widgets.social.custom]]
   title = "Zenn"

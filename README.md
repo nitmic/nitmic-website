@@ -14,7 +14,7 @@ URL：http://nitmic.club.nitech.ac.jp/
 
 ## Usage
 
-- 詳しい利用法や運用方法は[Wiki](https://github.com/nitmic-git/nitmic-hp/wiki)をご参照ください
+- 詳しい利用法や運用方法は[Wiki](https://github.com/nitmic/nitmic-hp/wiki)をご参照ください
 
 
 ### このリポジトリをローカルにcloneする
@@ -22,7 +22,7 @@ URL：http://nitmic.club.nitech.ac.jp/
 [Hugo](https://github.com/gohugoio/hugo)の[テーマ](https://themes.gohugo.io/)を使用する為、サブモジュールもクローンする必要があります
 ```
 # クローン
-$ git clone git@github.com:nitmic-git/nitmic-hp.git
+$ git clone git@github.com:nitmic/nitmic-hp.git
 
 # サブモジュールをクローン（更新）
 $ git submodule update --init --recursive
