@@ -72,6 +72,6 @@ summaryLength = 130
   url = "https://zenn.dev/p/nitmic"
 
 [[Params.widgets.social.custom]]
-  title = "Youtube"
+  title = "YouTube"
   icon = "youtube_icon.svg"
   url = "https://www.youtube.com/@nitech-nitmic"
