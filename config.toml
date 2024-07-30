@@ -70,3 +70,8 @@ summaryLength = 130
   title = "Zenn"
   icon = "logo-only-white.svg"
   url = "https://zenn.dev/p/nitmic"
+
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  icon = "youtube_icon.svg"
+  url = "https://www.youtube.com/@nitech-nitmic"
