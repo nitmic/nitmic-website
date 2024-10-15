@@ -1,5 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Build Hugo site and upload as Artifact
 
 on:
   push:
@@ -15,7 +14,7 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
@@ -25,9 +24,6 @@ jobs:
           fetch-depth: 0
       - name: Add Mainroad Theme
         run: git submodule update --remote themes/mainroad
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -38,16 +34,9 @@ jobs:
         run: |
           hugo \
             --gc \
-            --minify        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+            --minify
+      - name: Upload build as artifact
+        uses: actions/upload-artifact@v3
         with:
+          name: hugo-site
           path: ./public
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add ./public
-          git commit -m "Auto-publish changes from GitHub Actions"
-          git push origin develop
-
