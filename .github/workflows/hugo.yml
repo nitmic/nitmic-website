@@ -32,16 +32,17 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --gc --minify
-      - name: Commit and push only public directory to artifacts branch
+      - name: Commit and push build results
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git checkout -B artifacts  # artifactsブランチを作成またはチェックアウト
-          
-          # publicディレクトリを空にし、ビルド結果を移動
-          rm -rf public/*
-          mv ./public/* . # 現在のディレクトリに移動
 
+          # publicディレクトリからビルド結果を移動
+          mv ./public/* . || echo "No files to move"
+
+          # 変更をコミット
           git add .  # すべてのファイルを追加
           git commit -m "Deploy Hugo site to artifacts branch" || echo "No changes to commit"
           git push --force origin artifacts
+
