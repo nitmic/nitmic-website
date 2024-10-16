@@ -1,4 +1,4 @@
-name: Build Hugo site and upload to artifacts branch
+name: Build Hugo site and upload to release
 
 on:
   push:
@@ -32,15 +32,29 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --gc --minify
-      - name: Commit build results to artifacts branch
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git checkout -B artifacts  # artifactsブランチを作成またはチェックアウト
+      - name: Upload Build as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hugo-site
+          path: public/
 
-          # publicディレクトリ内のすべてのファイルをステージング
-          git rm -r --cached .  # 現在のブランチのすべてのファイルをインデックスから削除
-          git add public/*  # publicディレクトリ内のファイルを追加
-
-          git commit -m "Deploy Hugo site to artifacts branch" || echo "No changes to commit"
-          git push --force origin artifacts
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: hugo-site
+          path: public/
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.sha }}
+          release_name: "Hugo Site Build - ${{ github.sha }}"
+          body: "Automated build of the
