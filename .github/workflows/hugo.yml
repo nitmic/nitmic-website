@@ -33,7 +33,6 @@ jobs:
         run: |
           hugo --gc --minify
 
-      # publicディレクトリをZIPに圧縮
       - name: Archive Hugo Build Output
         run: |
           zip -r hugo-site.zip public/
@@ -41,8 +40,6 @@ jobs:
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: "latest-release"
           release_name: "Hugo Site Latest Release"
@@ -51,10 +48,30 @@ jobs:
 
       - name: Upload Release Assets
         uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./hugo-site.zip  # 圧縮されたZIPファイルを指定
+          asset_path: ./hugo-site.zip
           asset_name: hugo-site.zip
           asset_content_type: application/zip
+
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      # 既存のpublicディレクトリを削除
+      - name: Remove Existing Public Directory
+        run: |
+          rm -rf ../public
+
+      - name: Download the Release Asset
+        run: |
+          curl -L -o hugo-site.zip \
+          $(curl -s https://api.github.com/repos/${{ github.repository }}/releases/tags/latest-release | \
+          jq -r '.assets[] | select(.name == "hugo-site.zip") | .browser_download_url')
+
+      # ダウンロードしたZIPを解凍し、../publicとして設置
+      - name: Unzip the Hugo Site
+        run: unzip hugo-site.zip -d ../
+
+      - name: Cleanup
+        run: rm hugo-site.zip
