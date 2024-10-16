@@ -43,7 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: "release-${{ github.sha }}"  # コミットSHAをタグ名に追加
+          tag_name: "release-${{ github.sha }}"
           release_name: "Hugo Site Release ${GITHUB_SHA}"
           draft: false
           prerelease: false
@@ -67,11 +67,11 @@ jobs:
         run: |
           rm -rf ../public
 
+      # GitHub APIからリリースアセットのダウンロードURLを取得
       - name: Download the Release Asset
         run: |
-          curl -L -o hugo-site.zip \
-          $(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | \
-          jq -r '.assets[] | select(.name == "hugo-site.zip") | .browser_download_url')
+          url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
+          curl -L -o hugo-site.zip "$url"
 
       # ダウンロードしたZIPを解凍し、../publicとして設置
       - name: Unzip the Hugo Site
