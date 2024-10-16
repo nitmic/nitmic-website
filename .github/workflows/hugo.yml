@@ -32,7 +32,12 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --gc --minify
-          
+
+      # publicディレクトリをZIPに圧縮
+      - name: Archive Hugo Build Output
+        run: |
+          zip -r hugo-site.zip public/
+
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
@@ -50,10 +55,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./public
+          asset_path: ./hugo-site.zip  # 圧縮されたZIPファイルを指定
           asset_name: hugo-site.zip
           asset_content_type: application/zip
-          
-      - name: Archive Hugo Build Output
-        run: |
-          zip -r hugo-site.zip public/
