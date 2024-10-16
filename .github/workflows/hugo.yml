@@ -65,17 +65,22 @@ jobs:
       # 既存のpublicディレクトリを削除
       - name: Remove Existing Public Directory
         run: |
+          pwd  # 現在のディレクトリを表示
           rm -rf ../public
-
       # GitHub APIからリリースアセットのダウンロードURLを取得
       - name: Download the Release Asset
         run: |
+          pwd  # 現在のディレクトリを表示
           url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
           curl -L -o hugo-site.zip "$url"
-
       # ダウンロードしたZIPを解凍し、../publicとして設置
       - name: Unzip the Hugo Site
-        run: unzip hugo-site.zip -d ../
+        run: |
+          pwd  # 現在のディレクトリを表示
+          unzip hugo-site.zip -d ../
 
       - name: Cleanup
-        run: rm hugo-site.zip
+        run: |
+          pwd  # 現在のディレクトリを表示
+          rm hugo-site.zip
+
