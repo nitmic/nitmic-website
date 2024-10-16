@@ -41,17 +41,17 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ここでトークンを設定
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: "latest-release"
-          release_name: "Hugo Site Latest Release"
+          tag_name: "release-${{ github.sha }}"  # コミットSHAをタグ名に追加
+          release_name: "Hugo Site Release ${GITHUB_SHA}"
           draft: false
           prerelease: false
 
       - name: Upload Release Assets
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ここでもトークンを使用
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./hugo-site.zip
@@ -70,7 +70,7 @@ jobs:
       - name: Download the Release Asset
         run: |
           curl -L -o hugo-site.zip \
-          $(curl -s https://api.github.com/repos/${{ github.repository }}/releases/tags/latest-release | \
+          $(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | \
           jq -r '.assets[] | select(.name == "hugo-site.zip") | .browser_download_url')
 
       # ダウンロードしたZIPを解凍し、../publicとして設置
