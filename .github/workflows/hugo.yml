@@ -1,33 +1,11 @@
 name: Build Hugo site and upload to release
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches:
-      - main
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "ssh-deployment"
-  cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
+      - develop
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -46,9 +24,6 @@ jobs:
           fetch-depth: 0
       - name: Add Mainroad Theme
         run: git submodule update --remote themes/mainroad
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -56,18 +31,51 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc \
-            --minify        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add ./public
-          git commit -m "Auto-publish changes from GitHub Actions"
-          git push origin develop
+          hugo --gc --minify
 
+      - name: Archive Hugo Build Output
+        run: |
+          zip -r hugo-site.zip public/
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: "release-${{ github.sha }}"
+          release_name: "Hugo Site Release ${GITHUB_SHA}"
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./hugo-site.zip
+          asset_name: hugo-site.zip
+          asset_content_type: application/zip
+
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      # 既存のpublicディレクトリを削除
+      - name: Remove Existing Public Directory
+        run: |
+          rm -rf ../public
+
+      # GitHub APIからリリースアセットのダウンロードURLを取得
+      - name: Download the Release Asset
+        run: |
+          url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
+          curl -L -o hugo-site.zip "$url"
+
+      # ダウンロードしたZIPを解凍し、../publicとして設置
+      - name: Unzip the Hugo Site
+        run: unzip hugo-site.zip -d ../
+
+      - name: Cleanup
+        run: rm hugo-site.zip
