@@ -63,10 +63,10 @@ jobs:
     needs: build
     steps:
       # 既存のpublicディレクトリを削除
-      - name: Remove Existing Public Directory
-        run: |
-          pwd  # 現在のディレクトリを表示
-          rm -rf ../../../public  # 2つ上の階層のpublicを削除
+      # - name: Remove Existing Public Directory
+      #   run: |
+      #     pwd  # 現在のディレクトリを表示
+      #     rm -rf ../../../public  # 2つ上の階層のpublicを削除
 
       # GitHub APIからリリースアセットのダウンロードURLを取得
       - name: Download the Release Asset
@@ -79,7 +79,7 @@ jobs:
       - name: Unzip the Hugo Site
         run: |
           pwd  # 現在のディレクトリを表示
-          unzip hugo-site.zip -d ../../../public  # 2つ上の階層のpublicディレクトリに解凍
+          unzip hugo-site.zip -d ../../../../public  # 2つ上の階層のpublicディレクトリに解凍
 
       - name: Cleanup
         run: |
