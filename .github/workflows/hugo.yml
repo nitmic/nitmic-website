@@ -40,6 +40,8 @@ jobs:
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ここでトークンを設定
         with:
           tag_name: "latest-release"
           release_name: "Hugo Site Latest Release"
@@ -48,6 +50,8 @@ jobs:
 
       - name: Upload Release Assets
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ここでもトークンを使用
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./hugo-site.zip
