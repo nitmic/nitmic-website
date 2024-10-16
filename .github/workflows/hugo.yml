@@ -32,29 +32,28 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo --gc --minify
-      - name: Upload Build as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: hugo-site
-          path: public/
-
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Download Build Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: hugo-site
-          path: public/
+          
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.sha }}
+          tag_name: "release-${{ github.sha }}"
           release_name: "Hugo Site Build - ${{ github.sha }}"
-          body: "Automated build of the
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./public
+          asset_name: hugo-site.zip
+          asset_content_type: application/zip
+          
+      - name: Archive Hugo Build Output
+        run: |
+          zip -r hugo-site.zip public/
