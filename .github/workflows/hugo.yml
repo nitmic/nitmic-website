@@ -79,7 +79,7 @@ jobs:
       - name: Unzip the Hugo Site
         run: |
           pwd  # 現在のディレクトリを表示
-          unzip hugo-site.zip -d ../../../../public  # 2つ上の階層のpublicディレクトリに解凍
+          unzip hugo-site.zip -d ../../../../  # 2つ上の階層のpublicディレクトリに解凍
 
       - name: Cleanup
         run: |
