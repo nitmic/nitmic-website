@@ -89,11 +89,12 @@ jobs:
           pwd  # 現在のディレクトリを表示
           rm -rf ../../../../public  # 4つ上の階層のpublicを削除
 
-      # tempディレクトリの内容をpublicディレクトリに移動
+      # 新しいpublicディレクトリを作成し、tempディレクトリの内容を移動
       - name: Move New Site to Public Directory
         run: |
           pwd  # 現在のディレクトリを表示
-          mv temp/* ../../../../public  # temp内のデータをpublicディレクトリに移動
+          mkdir -p ../../../../public  # publicディレクトリを新規作成
+          mv temp/* ../../../../public/  # temp内のデータをpublicディレクトリに移動
 
       # Cleanup
       - name: Cleanup
