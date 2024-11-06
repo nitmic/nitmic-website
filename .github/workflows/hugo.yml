@@ -94,7 +94,7 @@ jobs:
         run: |
           pwd  # 現在のディレクトリを表示
           mkdir -p ../../../../public  # publicディレクトリを新規作成
-          mv temp/* ../../../../public/  # temp内のデータをpublicディレクトリに移動
+          mv temp/public/* ../../../../public/  # temp内のデータをpublicディレクトリに移動
 
       # Cleanup
       - name: Cleanup
