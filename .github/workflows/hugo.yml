@@ -1,11 +1,16 @@
 name: Build Hugo site and upload to release
 
 on:
+  # Runs on pushes targeting the default branch
   push:
     branches:
       - main
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -24,18 +29,19 @@ jobs:
           fetch-depth: 0
       - name: Add Mainroad Theme
         run: git submodule update --remote themes/mainroad
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: |
-          hugo --gc --minify
+        run: hugo --gc --minify
 
       - name: Archive Hugo Build Output
-        run: |
-          zip -r hugo-site.zip public/
+        run: zip -r hugo-site.zip public/
 
       - name: Create GitHub Release
         id: create_release
@@ -58,32 +64,42 @@ jobs:
           asset_name: hugo-site.zip
           asset_content_type: application/zip
 
+  # Deployment job
   deploy:
     runs-on: self-hosted
     needs: build
     steps:
+      # tempディレクトリにダウンロード
+      - name: Download the Release Asset to Temp Directory
+        run: |
+          pwd  # 現在のディレクトリを表示
+          mkdir -p temp  # tempディレクトリを作成
+          url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
+          curl -L -o temp/hugo-site.zip "$url"  # tempディレクトリにZIPをダウンロード
+
+      # ダウンロードしたZIPを解凍してtempディレクトリ内に展開
+      - name: Unzip the Hugo Site in Temp Directory
+        run: |
+          pwd  # 現在のディレクトリを表示
+          unzip temp/hugo-site.zip -d temp  # tempディレクトリに解凍
+
       # 既存のpublicディレクトリを削除
       - name: Remove Existing Public Directory
         run: |
           pwd  # 現在のディレクトリを表示
           rm -rf ../../../../public  # 4つ上の階層のpublicを削除
 
-      # GitHub APIからリリースアセットのダウンロードURLを取得
-      - name: Download the Release Asset
+      # tempディレクトリの内容をpublicディレクトリに移動
+      - name: Move New Site to Public Directory
         run: |
           pwd  # 現在のディレクトリを表示
-          url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
-          curl -L -o hugo-site.zip "$url"
-          
-      # ダウンロードしたZIPを解凍し、指定のディレクトリに設置
-      - name: Unzip the Hugo Site
-        run: |
-          pwd  # 現在のディレクトリを表示
-          unzip hugo-site.zip -d ../../../../  # 4つ上の階層のpublicディレクトリに解凍
+          mv temp/* ../../../../public  # temp内のデータをpublicディレクトリに移動
 
+      # Cleanup
       - name: Cleanup
         run: |
           pwd  # 現在のディレクトリを表示
-          rm hugo-site.zip  # ZIPファイルの削除
+          rm -rf temp  # tempディレクトリとZIPファイルを削除
+
 
 
