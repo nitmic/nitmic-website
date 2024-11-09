@@ -1,0 +1,15 @@
+name: Notify Discord
+
+on: [push, pull_request]
+
+jobs:
+  discord_notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Notification
+        env:
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d "{\"content\": \"GitHub Actionsによる通知: ${GITHUB_REPOSITORY} の ${GITHUB_REF} でイベントが発生しました。\"}" \
+          $WEBHOOK_URL
