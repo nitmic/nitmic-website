@@ -1,7 +1,7 @@
 name: Notify Discord
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   discord_notification:
