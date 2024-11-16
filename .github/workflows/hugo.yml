@@ -48,9 +48,6 @@ jobs:
           TZ: 'Asia/Tokyo' # タイムゾーン指定
         run: echo "CURRENT_DATETIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-      - name: Show current datetime
-        run: echo "Current datetime is ${{ env.CURRENT_DATETIME }}"
-
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
@@ -80,7 +77,6 @@ jobs:
       # tempディレクトリにダウンロード
       - name: Download the Release Asset to Temp Directory
         run: |
-          pwd  # 現在のディレクトリを表示
           mkdir -p temp  # tempディレクトリを作成
           url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
           curl -L -o temp/hugo-site.zip "$url"  # tempディレクトリにZIPをダウンロード
@@ -88,26 +84,22 @@ jobs:
       # ダウンロードしたZIPを解凍してtempディレクトリ内に展開
       - name: Unzip the Hugo Site in Temp Directory
         run: |
-          pwd  # 現在のディレクトリを表示
           unzip temp/hugo-site.zip -d temp  # tempディレクトリに解凍
 
       # 既存のpublicディレクトリを削除
       - name: Remove Existing Public Directory
         run: |
-          pwd  # 現在のディレクトリを表示
           rm -rf ../../../../public  # 4つ上の階層のpublicを削除
 
       # 新しいpublicディレクトリを作成し、tempディレクトリの内容を移動
       - name: Move New Site to Public Directory
         run: |
-          pwd  # 現在のディレクトリを表示
           mkdir -p ../../../../public  # publicディレクトリを新規作成
           mv temp/public/* ../../../../public/  # temp内のデータをpublicディレクトリに移動
 
       # Cleanup
       - name: Cleanup
         run: |
-          pwd  # 現在のディレクトリを表示
           rm -rf temp  # tempディレクトリとZIPファイルを削除
 
 
