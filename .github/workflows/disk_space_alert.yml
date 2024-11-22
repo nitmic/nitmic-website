@@ -28,7 +28,7 @@ jobs:
 
       - name: Check Threshold
         run: |
-          THRESHOLD=3
+          THRESHOLD=1
           DISK_USAGE=${{ steps.check_disk.outputs.DISK_USAGE }}
           TOTAL_DISK=${{ steps.check_disk.outputs.TOTAL_DISK }}
 
