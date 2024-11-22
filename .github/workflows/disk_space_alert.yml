@@ -3,7 +3,7 @@ name: Disk Space Alert
 on:
   push:
     branches:
-      - main
+      - '*'
   workflow_dispatch:
   schedule:
     - cron: '0 18 * * 1'
