@@ -1,0 +1,37 @@
+name: Disk Space Alert
+
+on:
+  schedule:
+    - cron: '0 18 * * 1'
+  workflow_run:
+    workflows:
+      - Build Hugo site and upload to release
+    types:
+      - completed
+
+jobs:
+  check-disk:
+    runs-on: self-hosted
+    steps:
+      - name: Check Disk Usage
+        id: check_disk
+        run: |
+          DISK_USAGE=$(du -sh --block-size=1G ~ | awk '{print $1}')
+          TOTAL_DISK=4
+
+          echo "DISK_USAGE=${DISK_USAGE}" >> $GITHUB_OUTPUT
+          echo "TOTAL_DISK=${TOTAL_DISK}" >> $GITHUB_OUTPUT
+
+          echo "### ディスク使用状況" >> $GITHUB_STEP_SUMMARY
+          echo "${DISK_USAGE}GB / ${TOTAL_DISK}GB" >> $GITHUB_STEP_SUMMARY
+
+      - name: Check Threshold
+        run: |
+          THRESHOLD=3
+          DISK_USAGE=${{ steps.check_disk.outputs.DISK_USAGE }}
+          TOTAL_DISK=${{ steps.check_disk.outputs.TOTAL_DISK }}
+
+          if [ "$DISK_USAGE" -gt "$THRESHOLD" ]; then
+            echo "::error title=Disk Usage Alert::ディスク使用量に注意してください（${DISK_USAGE}GB / ${TOTAL_DISK}GB）。"
+            exit 1
+          fi
