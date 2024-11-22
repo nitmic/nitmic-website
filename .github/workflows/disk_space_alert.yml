@@ -1,6 +1,7 @@
 name: Disk Space Alert
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 18 * * 1'
   workflow_run:
