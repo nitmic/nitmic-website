@@ -17,7 +17,7 @@ NITMic はゲーム制作を始めとするデジタル創作活動を行うサ�
 部員は`👾プログラマ`、`🎨デザイナー`、`🎹コンポーザー`のいずれかの役職に所属し、
 チームを組んで、コンテストや学校祭に向けてゲームを作成したり、
 創作物を制作したりするのが主な活動です。
-また、[#nitmic1draw](https://twitter.com/search?q=%23nitmic1draw&src=hashtag_click&f=live)やゲームジャム、部内勉強会などの活動もしております。
+また、[#nitmic1draw](https://x.com/search?q=%23nitmic1draw&src=hashtag_click&f=live)やゲームジャム、部内勉強会などの活動もしております。
 
 > メモ：有志でやりたいことがあったら、気軽に企画してみてください。（。ò ∀ ó。）
 

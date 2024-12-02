@@ -25,9 +25,9 @@ weight: "3"
 #### 写真
 
 {{< gallery >}}
-    {{< figure link="/images/top/access/bushitsu1.png" caption="部室写真１">}}
-    {{< figure link="/images/top/access/bushitsu2.png" caption="部室写真２">}}
-    {{< figure link="/images/top/access/nuigurumi.png" caption="部室に並ぶぬいぐるみ">}}
+{{< figure link="/images/top/access/bushitsu1.png" caption="部室写真１">}}
+{{< figure link="/images/top/access/bushitsu2.png" caption="部室写真２">}}
+{{< figure link="/images/top/access/nuigurumi.png" caption="部室に並ぶぬいぐるみ">}}
 {{< /gallery >}}
 
 名古屋工業大学の北西に位置する 55 号館（課外活動棟）4 階に部室を置かせてもらっております。
@@ -40,5 +40,4 @@ weight: "3"
 もしくは公式ツイッターのダイレクトメッセージによろしくお願いします。ｍ（＿ ＿）ｍ
 
 - club.nitmic@gmail.com
-- https://twitter.com/nitmic_twi
-
+- https://x.com/nitmic_twi
