@@ -1,3 +1,7 @@
+# Settings for Dev Container
 * text=auto eol=lf
 *.{cmd,[cC][mM][dD]} text eol=crlf
 *.{bat,[bB][aA][tT]} text eol=crlf
+
+# Settings for GitHub Linguist
+*.md linguist-detectable=true
