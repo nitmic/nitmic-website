@@ -38,7 +38,7 @@ summaryLength = 130
   customCSS = ["css/style.css"]
 
 [Params.logo]
-  image = "logo/logo-horizontal_light-color.png"
+  image = "logo/logo-horizontal_light-color.svg"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
