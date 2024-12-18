@@ -38,8 +38,7 @@ summaryLength = 130
   customCSS = ["css/style.css"]
 
 [Params.logo]
-  subtitle = "名古屋工業大学コンピュータ倶楽部" # Logo subtitle
-  image = "logo/logo.png"
+  image = "logo/logo-horizontal_light-color.svg"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
