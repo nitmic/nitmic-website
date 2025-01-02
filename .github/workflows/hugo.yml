@@ -55,7 +55,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: "release-${{ github.sha }}-${{ github.run_id }}"
-          release_name: "nitmic-website ${{ env.CURRENT_DATETIME }}"
+          release_name: "${{ env.CURRENT_DATETIME }}"
           draft: false
           prerelease: false
 

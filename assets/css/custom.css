@@ -57,6 +57,7 @@ body {
 	word-wrap: break-word;
 	background: #f7f7f7;
 	-webkit-font-smoothing: antialiased;
+	overflow-y: scroll;
 }
 
 .container {
