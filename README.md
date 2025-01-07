@@ -1,14 +1,17 @@
 # nitmic-hp
 
+![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/hugo.yml/badge.svg)
+
 URL：http://nitmic.club.nitech.ac.jp/
 
 ## Overview
 
-- **名古屋工業大学コンピュータ俱楽部NITMic** のホームページ開発リポジトリです
-  
+- **名古屋工業大学コンピュータ俱楽部 NITMic** のホームページ開発リポジトリです
+
 - 静的サイトジェネレーター[Hugo](https://github.com/gohugoio/hugo)を利用しています
+
   - 使用テーマ：[Mainroad](https://github.com/Vimux/Mainroad)
-    
+
 - ホスティングは課外活動用ウェブサイトホスティングサービスを利用しています
   - 詳細：[国立大学法人名古屋工業大学　情報基盤センター](https://www.cc.nitech.ac.jp/service/students/web-hosting-club.html)（学内のみからアクセス）
 
@@ -16,10 +19,10 @@ URL：http://nitmic.club.nitech.ac.jp/
 
 - 詳しい利用法や運用方法は[Wiki](https://github.com/nitmic/nitmic-website/wiki)をご参照ください
 
-
-### このリポジトリをローカルにcloneする
+### このリポジトリをローカルに clone する
 
 [Hugo](https://github.com/gohugoio/hugo)の[テーマ](https://themes.gohugo.io/)を使用する為、サブモジュールもクローンする必要があります
+
 ```
 # クローン
 $ git clone git@github.com:nitmic/nitmic-hp.git
@@ -29,12 +32,14 @@ $ git submodule update --init --recursive
 ```
 
 ### ローカルでプレビューする
+
 静的サイトジェネレーター[Hugo](https://github.com/gohugoio/hugo)をインストールし、下記のコマンドを実行することでローカルでプレビューすることができます
+
 ```
 $ hugo server
 
 # ログの例
-Start building sites … 
+Start building sites …
 hugo v0.89.4-AB01BA6E windows/amd64 BuildDate=2021-11-17T08:24:09Z VendorInfo=gohugoio
                    | EN
 -------------------+------
@@ -56,4 +61,5 @@ Running in Fast Render Mode. For full rebuilds on change: hugo server --disableF
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
+
 お使いのブラウザで http://localhost:1313/ にアクセス
