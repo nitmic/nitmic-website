@@ -1,4 +1,4 @@
-name: Build Hugo site and upload to release
+name: Build
 
 on:
   workflow_dispatch:
@@ -63,27 +63,3 @@ jobs:
           asset_path: ./hugo-site.zip
           asset_name: hugo-site.zip
           asset_content_type: application/zip
-
-  deploy:
-    runs-on: self-hosted
-    needs: build
-    steps:
-      - name: Download the Release Asset to Temp Directory
-        run: |
-          mkdir -p temp
-          url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
-          curl -L -o temp/hugo-site.zip "$url"
-
-      - name: Unzip the Hugo Site in Temp Directory
-        run: unzip temp/hugo-site.zip -d temp
-
-      - name: Remove Existing Public Directory
-        run: rm -rf ../../../../public
-
-      - name: Move New Site to Public Directory
-        run: |
-          mkdir -p ../../../../public
-          mv temp/public/* ../../../../public/
-
-      - name: Cleanup
-        run: rm -rf temp

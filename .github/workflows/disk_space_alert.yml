@@ -6,7 +6,7 @@ on:
     - cron: "* * * * */7"
   workflow_run:
     workflows:
-      - Build Hugo site and upload to release
+      - Deploy
     types:
       - completed
 

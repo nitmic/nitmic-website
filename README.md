@@ -1,6 +1,8 @@
 # nitmic-hp
 
-![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/hugo.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/build.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/deploy.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/disk_space_alert.yml/badge.svg)
 
 URL：http://nitmic.club.nitech.ac.jp/
 
