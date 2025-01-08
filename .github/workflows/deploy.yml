@@ -12,22 +12,21 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Download the Release Asset to Temp Directory
+      - name: Create Temporary Directory
+        id: create_temp_dir
         run: |
-          mkdir -p temp
+          TEMP_DIR=$(mktemp -d)
+          echo "TEMP_DIR=$TEMP_DIR" >> $GITHUB_OUTPUT
+
+      - name: Download the Release Asset
+        run: |
           url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
-          curl -L -o temp/hugo-site.zip "$url"
+          curl -L -o "${{ steps.create_temp_dir.outputs.TEMP_DIR }}/hugo-site.zip" "$url"
 
-      - name: Unzip the Hugo Site in Temp Directory
-        run: unzip temp/hugo-site.zip -d temp
-
-      - name: Remove Existing Public Directory
-        run: rm -rf ../../../../public
-
-      - name: Move New Site to Public Directory
+      - name: Unzip the Release Asset
         run: |
+          unzip "${{ steps.create_temp_dir.outputs.TEMP_DIR }}/hugo-site.zip" -d "${{ steps.create_temp_dir.outputs.TEMP_DIR }}/unzipped"
+          rm -rf ../../../../public
           mkdir -p ../../../../public
-          mv temp/public/* ../../../../public/
-
-      - name: Cleanup
-        run: rm -rf temp
+          mv "${{ steps.create_temp_dir.outputs.TEMP_DIR }}/unzipped/public/"* ../../../../public/
+          rm -rf "${{ steps.create_temp_dir.outputs.TEMP_DIR }}"
