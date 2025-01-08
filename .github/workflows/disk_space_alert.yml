@@ -3,10 +3,10 @@ name: Disk Space Alert
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 1'
+    - cron: "* * * * */7"
   workflow_run:
     workflows:
-      - Build Hugo site and upload to release
+      - Deploy
     types:
       - completed
 
@@ -17,7 +17,7 @@ jobs:
       - name: Check Disk Usage
         id: check_disk
         run: |
-          DISK_USAGE=$(du -sm ~ | awk '{printf "%.1f", $1 / 1024}')
+          DISK_USAGE=$(du -sm ~ | awk '{printf "%.2f", $1 / 1024}')
           TOTAL_DISK=4
 
           echo "DISK_USAGE=${DISK_USAGE}" >> $GITHUB_OUTPUT
