@@ -1,16 +1,12 @@
 name: Build Hugo site and upload to release
 
 on:
-  # Runs on pushes targeting the default branch
+  workflow_dispatch:
   push:
     branches:
       - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -46,7 +42,7 @@ jobs:
       - name: Set current datetime as output
         id: set_datetime
         env:
-          TZ: 'Asia/Tokyo' # タイムゾーン指定
+          TZ: "Asia/Tokyo"
         run: echo "CURRENT_DATETIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
@@ -70,38 +66,26 @@ jobs:
           asset_name: hugo-site.zip
           asset_content_type: application/zip
 
-  # Deployment job
   deploy:
     runs-on: self-hosted
     needs: build
     steps:
-      # tempディレクトリにダウンロード
       - name: Download the Release Asset to Temp Directory
         run: |
-          mkdir -p temp  # tempディレクトリを作成
+          mkdir -p temp
           url=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep "browser_download_url.*hugo-site.zip" | cut -d '"' -f 4)
-          curl -L -o temp/hugo-site.zip "$url"  # tempディレクトリにZIPをダウンロード
+          curl -L -o temp/hugo-site.zip "$url"
 
-      # ダウンロードしたZIPを解凍してtempディレクトリ内に展開
       - name: Unzip the Hugo Site in Temp Directory
-        run: |
-          unzip temp/hugo-site.zip -d temp  # tempディレクトリに解凍
+        run: unzip temp/hugo-site.zip -d temp
 
-      # 既存のpublicディレクトリを削除
       - name: Remove Existing Public Directory
-        run: |
-          rm -rf ../../../../public  # 4つ上の階層のpublicを削除
+        run: rm -rf ../../../../public
 
-      # 新しいpublicディレクトリを作成し、tempディレクトリの内容を移動
       - name: Move New Site to Public Directory
         run: |
-          mkdir -p ../../../../public  # publicディレクトリを新規作成
-          mv temp/public/* ../../../../public/  # temp内のデータをpublicディレクトリに移動
+          mkdir -p ../../../../public
+          mv temp/public/* ../../../../public/
 
-      # Cleanup
       - name: Cleanup
-        run: |
-          rm -rf temp  # tempディレクトリとZIPファイルを削除
-
-
-
+        run: rm -rf temp
