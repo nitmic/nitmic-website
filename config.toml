@@ -27,7 +27,7 @@ summaryLength = 130
   category = "categories"
 
 [Params]
-  description = "名古屋工業大学コンピュータ倶楽部NITMic公式ホームページ" # Description of your site
+  description = "名古屋工業大学コンピュータ倶楽部 NITMic 公式 Web サイト" # Description of your site
   opengraph = true
   twitter_cards = true
   readmore = false # Show "Read more" button in list if true
