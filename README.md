@@ -1,5 +1,7 @@
 # nitmic-hp
 
+![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/hugo.yml/badge.svg)
+
 URL：http://nitmic.club.nitech.ac.jp/
 
 ## Overview
