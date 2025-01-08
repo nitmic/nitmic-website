@@ -5,9 +5,9 @@ baseURL = 'https://nitmic.club.nitech.ac.jp/'
 # theme = "mainroad"
 
 # baseurl = "/"
-title = "NITMic" # NITMicに変更
-languageCode = "ja" # jaに変更
-paginate = "10" # Number of posts per page
+title = "NITMic"     # NITMicに変更
+languageCode = "ja"  # ja に変更
+paginate = "10"      # Number of posts per page
 theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
@@ -21,56 +21,56 @@ hasCJKLanguage = true
 summaryLength = 130
 
 [taxonomies]
-  author = "authors"
-  member = "members"
-  tag = "tags"
-  category = "categories"
+author = "authors"
+member = "members"
+tag = "tags"
+category = "categories"
 
 [Params]
-  description = "名古屋工業大学コンピュータ倶楽部NITMic公式ホームページ" # Description of your site
-  opengraph = true
-  twitter_cards = true
-  readmore = false # Show "Read more" button in list if true
-  authorbox = false
-  pager = true
-  post_meta = ["date","author","categories"] # Order of post meta information
-  highlightColor = "#ff9305" # ハイライトカラーを変更
-  customCSS = ["css/style.css"]
+description = "名古屋工業大学コンピュータ倶楽部 NITMic 公式 Web サイト" # Description of your site
+opengraph = true
+twitter_cards = true
+readmore = false                                   # Show "Read more" button in list if true
+authorbox = false
+pager = true
+post_meta = ["date", "author", "categories"]       # Order of post meta information
+highlightColor = "#ff9305"                         # ハイライトカラーを変更
+customCSS = ["css/style.css"]
 
 [Params.logo]
-  image = "logo/logo-horizontal_light-color.svg"
+image = "logo/logo-horizontal_light-color.svg"
 
 [Params.sidebar]
-  home = "right"   # Configure layout for home page
-  list = "right"   # Configure layout for list pages
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = [ "recent", "categories", "social" ,"taglist"]
+home = "right"   # Configure layout for home page
+list = "right"   # Configure layout for list pages
+single = "right" # Configure layout for single pages
+# Enable widgets in given order
+widgets = ["recent", "categories", "social", "taglist"]
 
 [Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+recent_num = 5       # Set the number of articles in the "Recent articles" widget
+tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
 [Params.widgets.social]
-  twitter = "nitmic_twi"
-  github = "nitmic"
+twitter = "nitmic_twi"
+github = "nitmic"
 
 [[Params.widgets.social.custom]]
-  title = " Booth"
-  icon = "booth_icon.svg"
-  url = "https://nitmic.booth.pm/"
+title = " Booth"
+icon = "booth_icon.svg"
+url = "https://nitmic.booth.pm/"
 
 [[Params.widgets.social.custom]]
-  title = "SoundCloud"
-  icon = "soundcloud_icon.svg"
-  url = "https://soundcloud.com/nitmic"
+title = "SoundCloud"
+icon = "soundcloud_icon.svg"
+url = "https://soundcloud.com/nitmic"
 
 [[Params.widgets.social.custom]]
-  title = "Zenn"
-  icon = "logo-only-white.svg"
-  url = "https://zenn.dev/p/nitmic"
+title = "Zenn"
+icon = "logo-only-white.svg"
+url = "https://zenn.dev/p/nitmic"
 
 [[Params.widgets.social.custom]]
-  title = "YouTube"
-  icon = "youtube_icon.svg"
-  url = "https://www.youtube.com/@nitech-nitmic"
+title = "YouTube"
+icon = "youtube_icon.svg"
+url = "https://www.youtube.com/@nitech-nitmic"
