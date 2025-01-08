@@ -3,7 +3,7 @@ name: Disk Space Alert
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 1'
+    - cron: "* * * * */7"
   workflow_run:
     workflows:
       - Build Hugo site and upload to release
