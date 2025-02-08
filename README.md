@@ -20,40 +20,36 @@ URL：http://nitmic.club.nitech.ac.jp/
 
 ### このリポジトリをローカルに clone する
 
-[Hugo](https://github.com/gohugoio/hugo) の [テーマ](https://themes.gohugo.io/) を使用する為、サブモジュールもクローンする必要があります
+下記のコマンドを実行することでこのリポジトリをローカルに clone することができます
 
 ```
-# クローン
-$ git clone git@github.com:nitmic/nitmic-hp.git
-
-# サブモジュールをクローン（更新）
-$ git submodule update --init --recursive
+$ git clone git@github.com:nitmic/nitmic-website.git
 ```
 
 ### ローカルでプレビューする
 
-静的サイトジェネレーター [Hugo](https://github.com/gohugoio/hugo) をインストールし、下記のコマンドを実行することでローカルでプレビューすることができます
+静的サイトジェネレーター [Hugo](https://github.com/gohugoio/hugo) と [GO](https://go.dev/) をインストールし、下記のコマンドを実行することでローカルでプレビューすることができます
 
 ```
 $ hugo server
-
-# ログの例
+Watching for changes in /workspaces/nitmic-website/{archetypes,assets,content,data,layouts,static}
+Watching for config changes in /workspaces/nitmic-website/config.toml
 Start building sites …
-hugo v0.89.4-AB01BA6E windows/amd64 BuildDate=2021-11-17T08:24:09Z VendorInfo=gohugoio
+hugo v0.115.4-dc9524521270f81d1c038ebbb200f0cfa3427cc5 linux/amd64 BuildDate=2023-07-20T06:49:57Z VendorInfo=gohugoio
+
+
                    | EN
 -------------------+------
-  Pages            | 115
-  Paginator pages  |   3
+  Pages            | 145
+  Paginator pages  |   5
   Non-page files   |   0
-  Static files     | 159
+  Static files     | 182
   Processed images |   0
-  Aliases          |  47
+  Aliases          |  60
   Sitemaps         |   1
   Cleaned          |   0
 
-Built in 362 ms
-Watching for changes in D:\repository\nitmic-hp\{archetypes,assets,content,data,layouts,static,themes}
-Watching for config changes in D:\repository\nitmic-hp\config.toml
+Built in 2611 ms
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
