@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       HUGO_VERSION: 0.115.4
     steps:
@@ -37,29 +39,10 @@ jobs:
       - name: Archive Hugo Build Output
         run: zip -r hugo-site.zip public/
 
-      - name: Set current datetime as output
-        id: set_datetime
-        env:
-          TZ: "Asia/Tokyo"
-        run: echo "CURRENT_DATETIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
-
       - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: "release-${{ github.sha }}-${{ github.run_id }}"
-          release_name: "${{ steps.set_datetime.outputs.CURRENT_DATETIME }}"
-          draft: false
-          prerelease: false
-
-      - name: Upload Release Assets
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./hugo-site.zip
-          asset_name: hugo-site.zip
-          asset_content_type: application/zip
+        run: |
+          gh release create v${{ github.run_number }} hugo-site.zip \
+            --target "${{ github.sha }}" \
+            --title "v${{ github.run_number }}"
