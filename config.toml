@@ -8,7 +8,6 @@ baseURL = 'https://nitmic.club.nitech.ac.jp/'
 title = "NITMic"     # NITMicに変更
 languageCode = "ja"  # ja に変更
 paginate = "10"      # Number of posts per page
-theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
@@ -19,6 +18,10 @@ noTimes = true
 #日本語用の.Summary設定
 hasCJKLanguage = true
 summaryLength = 130
+
+[module]
+  [[module.imports]]
+    path = 'github.com/Vimux/Mainroad'
 
 [taxonomies]
 author = "authors"
