@@ -45,5 +45,5 @@ jobs:
         run: |
           gh release create v${{ github.run_number }} hugo-site.zip \
             --target "${{ github.sha }}" \
-            --title "v${{ github.run_number }}"
+            --title "v${{ github.run_number }}" \
             --generate-notes
