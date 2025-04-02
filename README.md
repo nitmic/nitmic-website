@@ -1,8 +1,8 @@
 # NITMic 公式 Web サイト
 
-![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/build.yml/badge.svg)
-![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/deploy.yml/badge.svg)
-![workflow](https://github.com/nitmic/nitmic-website/actions/workflows/disk_space_alert.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic.club.nitech.ac.jp/actions/workflows/build.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic.club.nitech.ac.jp/actions/workflows/deploy.yml/badge.svg)
+![workflow](https://github.com/nitmic/nitmic.club.nitech.ac.jp/actions/workflows/disk_space_alert.yml/badge.svg)
 
 URL：http://nitmic.club.nitech.ac.jp/
 
@@ -16,14 +16,14 @@ URL：http://nitmic.club.nitech.ac.jp/
 
 ## Usage
 
-- 詳しい利用法や運用方法は [Wiki](https://github.com/nitmic/nitmic-website/wiki) をご参照ください
+- 詳しい利用法や運用方法は [Wiki](https://github.com/nitmic/nitmic.club.nitech.ac.jp/wiki) をご参照ください
 
 ### このリポジトリをローカルに clone する
 
 下記のコマンドを実行することでこのリポジトリをローカルに clone することができます
 
 ```
-$ git clone git@github.com:nitmic/nitmic-website.git
+$ git clone git@github.com:nitmic/nitmic.club.nitech.ac.jp.git
 ```
 
 ### ローカルでプレビューする
@@ -32,24 +32,25 @@ $ git clone git@github.com:nitmic/nitmic-website.git
 
 ```
 $ hugo server
-Watching for changes in /workspaces/nitmic-website/{archetypes,assets,content,data,layouts,static}
-Watching for config changes in /workspaces/nitmic-website/config.toml
+hugo: collected modules in 1997 ms
+Watching for changes in /workspaces/nitmic.club.nitech.ac.jp/{archetypes,assets,content,data,layouts,static}
+Watching for config changes in /workspaces/nitmic.club.nitech.ac.jp/config.toml
 Start building sites …
 hugo v0.115.4-dc9524521270f81d1c038ebbb200f0cfa3427cc5 linux/amd64 BuildDate=2023-07-20T06:49:57Z VendorInfo=gohugoio
 
 
                    | EN
 -------------------+------
-  Pages            | 145
-  Paginator pages  |   5
+  Pages            | 163
+  Paginator pages  |   9
   Non-page files   |   0
-  Static files     | 182
+  Static files     | 206
   Processed images |   0
-  Aliases          |  60
+  Aliases          |  66
   Sitemaps         |   1
   Cleaned          |   0
 
-Built in 2611 ms
+Built in 7777 ms
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender

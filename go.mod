@@ -1,4 +1,4 @@
-module github.com/nitmic/nitmic-website
+module github.com/nitmic/nitmic.club.nitech.ac.jp
 
 go 1.23.4
 
