@@ -39,12 +39,14 @@ VS Code に [Dev Containers 拡張機能](https://marketplace.visualstudio.com/i
 以下のコマンドを実行すると、Hugo によるローカルサーバーが立ち上がり、サイトのプレビューを確認できます：
 
 ```
-vscode ➜ /workspaces/nitmic.club.nitech.ac.jp (main) $ hugo server
+$ hugo server
 ```
 
 実行後、以下のようなログが表示されます：
 
 ```
+vscode ➜ /workspaces/nitmic.club.nitech.ac.jp (main) $ hugo server
+
 hugo: collected modules in 1239 ms
 Watching for changes in /workspaces/nitmic.club.nitech.ac.jp/{archetypes,assets,content,data,layouts,static}
 Watching for config changes in /workspaces/nitmic.club.nitech.ac.jp/config.toml
