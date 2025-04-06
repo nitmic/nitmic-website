@@ -24,11 +24,15 @@ URL：http://nitmic.club.nitech.ac.jp/
 $ git clone git@github.com:nitmic/nitmic.club.nitech.ac.jp.git
 ```
 
-### Devcontainer で開く
+### Dev Containers で開く
 
-本サイトの開発は Devcontainer を利用することを推奨しております。Devcontainer を使うことで、必要な開発環境（Hugo や Node.js など）を自動でセットアップでき、誰でも同じ環境で開発が可能になります。
+本リポジトリでは、[Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) を用いた開発環境の構築を推奨しています。
+Dev Containers を利用することで、Hugo や Go ランタイムなどの必要なツールを自動でセットアップでき、すべての開発者が一貫した環境で作業を行うことが可能になります。
 
-リポジトリを VS Code で開くと、「Reopen in Container（コンテナで再オープン）」という通知が表示されます。このボタンをクリックすることで、Devcontainer 環境が起動し、すぐに開発を始めることができます。もし通知が表示されない場合は、コマンドパレット（F1 または Ctrl+Shift+P）を開き、「Dev Containers: Reopen in Container」を選択してください。
+VS Code に [Dev Containers 拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) をインストールした状態でリポジトリを開くと、「Reopen in Container（コンテナで再オープン）」という通知が表示されます。
+このボタンをクリックすることで、Dev Containers 環境が起動し、すぐに開発を始めることができます。
+
+通知が表示されない場合は、コマンドパレット（`F1` または `Ctrl+Shift+P`）を開き、「Dev Containers: Reopen in Container」を選択してください。
 
 ### ローカルでプレビューする
 
