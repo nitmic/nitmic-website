@@ -24,7 +24,7 @@ URL：http://nitmic.club.nitech.ac.jp/
 $ git clone git@github.com:nitmic/nitmic.club.nitech.ac.jp.git
 ```
 
-### Dev Containers で開く
+### Dev Container で開く
 
 本リポジトリでは、[Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) を用いた開発環境の構築を推奨しています。
 Dev Containers を利用することで、Hugo や Go ランタイムなどの必要なツールを自動でセットアップでき、すべての開発者が一貫した環境で作業を行うことが可能になります。
