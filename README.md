@@ -16,23 +16,38 @@ URL：http://nitmic.club.nitech.ac.jp/
 
 ## Usage
 
-- 詳しい利用法や運用方法は [Wiki](https://github.com/nitmic/nitmic.club.nitech.ac.jp/wiki) をご参照ください
-
 ### このリポジトリをローカルに clone する
 
-下記のコマンドを実行することでこのリポジトリをローカルに clone することができます
+下記のコマンドを実行することでこのリポジトリをローカルに clone することができます：
 
 ```
 $ git clone git@github.com:nitmic/nitmic.club.nitech.ac.jp.git
 ```
 
+### Dev Container で開く
+
+本リポジトリでは、[Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers) を用いた開発環境の構築を推奨しています。
+Dev Containers を利用することで、Hugo や Go ランタイムなどの必要なツールを自動でセットアップでき、すべての開発者が一貫した環境で作業を行うことが可能になります。
+
+VS Code に [Dev Containers 拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) をインストールした状態でリポジトリを開くと、「Reopen in Container（コンテナで再オープン）」という通知が表示されます。
+このボタンをクリックすることで、Dev Containers 環境が起動し、すぐに開発を始めることができます。
+
+通知が表示されない場合は、コマンドパレット（`F1` または `Ctrl+Shift+P`）を開き、「Dev Containers: Reopen in Container」を選択してください。
+
 ### ローカルでプレビューする
 
-静的サイトジェネレーター [Hugo](https://github.com/gohugoio/hugo) と [GO](https://go.dev/) をインストールし、下記のコマンドを実行することでローカルでプレビューすることができます
+以下のコマンドを実行すると、Hugo によるローカルサーバーが立ち上がり、サイトのプレビューを確認できます：
 
 ```
 $ hugo server
-hugo: collected modules in 1997 ms
+```
+
+実行後、以下のようなログが表示されます：
+
+```
+vscode ➜ /workspaces/nitmic.club.nitech.ac.jp (main) $ hugo server
+
+hugo: collected modules in 1239 ms
 Watching for changes in /workspaces/nitmic.club.nitech.ac.jp/{archetypes,assets,content,data,layouts,static}
 Watching for config changes in /workspaces/nitmic.club.nitech.ac.jp/config.toml
 Start building sites …
@@ -50,7 +65,7 @@ hugo v0.115.4-dc9524521270f81d1c038ebbb200f0cfa3427cc5 linux/amd64 BuildDate=202
   Sitemaps         |   1
   Cleaned          |   0
 
-Built in 7777 ms
+Built in 5244 ms
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
@@ -58,4 +73,5 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-お使いのブラウザで http://localhost:1313/ にアクセス
+お使いのブラウザで http://localhost:1313/ にアクセスすると、ローカル環境でサイトのプレビューが表示されます。
+編集内容は保存するたびに自動で反映されるため、リアルタイムに確認しながら作業が可能です。
