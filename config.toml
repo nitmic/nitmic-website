@@ -56,12 +56,12 @@ tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by
 
 [[Params.widgets.social.custom]]
 title = "Twitter"
-icon = "layouts/partials/X.svg"
+icon = "logo.svg"
 url = "https://x.com/nitmic_twi"
 
 [[Params.widgets.social.custom]]
 title = "GitHub"
-icon = "layouts/partials/github.svg"
+icon = "github.svg"
 url = "https://github.com/nitmic"
 
 [[Params.widgets.social.custom]]
