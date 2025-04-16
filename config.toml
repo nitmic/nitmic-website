@@ -56,28 +56,10 @@ tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by
 
 [Params.widgets.social]
 github = "nitmic"
-
-[[Params.widgets.social.custom]]
-title = "X"
-icon = "x_icon.svg"
-url = "https://x.com/nitmic_twi"
-
-[[Params.widgets.social.custom]]
-title = " Booth"
-icon = "booth_icon.svg"
-url = "https://nitmic.booth.pm/"
-
-[[Params.widgets.social.custom]]
-title = "SoundCloud"
-icon = "soundcloud_icon.svg"
-url = "https://soundcloud.com/nitmic"
-
-[[Params.widgets.social.custom]]
-title = "Zenn"
-icon = "logo-only-white.svg"
-url = "https://zenn.dev/p/nitmic"
-
-[[Params.widgets.social.custom]]
-title = "YouTube"
-icon = "youtube_icon.svg"
-url = "https://www.youtube.com/@nitech-nitmic"
+custom = [
+  { title = "X", icon = "x_icon.svg", url = "https://x.com/nitmic_twi" },
+  { title = "Booth", icon = "booth_icon.svg", url = "https://nitmic.booth.pm/" },
+  { title = "SoundCloud", icon = "soundcloud_icon.svg", url = "https://soundcloud.com/nitmic" },
+  { title = "Zenn", icon = "logo-only-white.svg", url = "https://zenn.dev/p/nitmic" },
+  { title = "YouTube", icon = "youtube_icon.svg", url = "https://www.youtube.com/@nitech-nitmic" }
+]
