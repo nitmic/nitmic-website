@@ -60,6 +60,6 @@ custom = [
   { title = "X", icon = "x_icon.svg", url = "https://x.com/nitmic_twi" },
   { title = "Booth", icon = "booth_icon.svg", url = "https://nitmic.booth.pm/" },
   { title = "SoundCloud", icon = "soundcloud_icon.svg", url = "https://soundcloud.com/nitmic" },
-  { title = "Zenn", icon = "zenn.svg", url = "https://zenn.dev/p/nitmic" },
+  { title = "Zenn", icon = "zenn_icon.svg", url = "https://zenn.dev/p/nitmic" },
   { title = "YouTube", icon = "youtube_icon.svg", url = "https://www.youtube.com/@nitech-nitmic" }
 ]
