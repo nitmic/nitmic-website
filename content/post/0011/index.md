@@ -2,7 +2,7 @@
 title: "合同サークル説明会を行いました"
 description: "2022/04/16：c0de、TAIR さんと合同サークル説明会を行いました。"
 date: "2022-04-30"
-thumbnail: "img/goudou_setumei_kai.png"
+thumbnail: "goudou_setumei_kai.png"
 categories: ["記事"]
 tags: ["2022", "新歓"]
 sidebar: "right"
@@ -37,7 +37,7 @@ menu: "false"
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/koukuubu.jpg" caption="グランドで新歓をする航空部" >}}
+  {{< figure link="koukuubu.jpg" caption="グランドで新歓をする航空部" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->
 

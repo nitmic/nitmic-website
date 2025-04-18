@@ -40,7 +40,7 @@ NITMic はどういう部活なのか、どんな風に活動しているのか�
 
 <div class="col">
     <div class="row justify-content-center">
-        {{< figure src="img/image-1.png" title="スライド" class="img-fluid" width="500">}}
+        {{< figure src="image-1.png" title="スライド" class="img-fluid" width="500">}}
     </div>
 </div>
 

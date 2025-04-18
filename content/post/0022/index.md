@@ -1,7 +1,7 @@
 ---
 title: "NITMic ゲームセンター 2023"
 date: "2023-11-18"
-thumbnail: "img/thumbnail.jpg"
+thumbnail: "thumbnail.jpg"
 categories: ["記事"]
 tags: ["NITMic", "2023", "工大祭", "NITMic ゲームセンター"]
 authors: ["Mass"]
@@ -40,8 +40,8 @@ NITMic では例年、工大祭向けにゲームを作成し、学生企画に�
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/koudaisai-2023-1.jpg" caption="会場の様子1" >}}
-  {{< figure link="img/koudaisai-2023-2.jpg" caption="会場の様子2" >}}
-  {{< figure link="img/koudaisai-2023-3.jpg" caption="会場の様子3" >}}
+  {{< figure link="koudaisai-2023-1.jpg" caption="会場の様子1" >}}
+  {{< figure link="koudaisai-2023-2.jpg" caption="会場の様子2" >}}
+  {{< figure link="koudaisai-2023-3.jpg" caption="会場の様子3" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->

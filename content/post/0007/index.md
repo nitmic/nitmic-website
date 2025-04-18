@@ -1,7 +1,7 @@
 ---
 title: "From:Atlas"
 date: "2020-06-01"
-thumbnail: "img/FROMATLUS_img.png"
+thumbnail: "FROMATLUS_img.png"
 categories: ["作品紹介"]
 description: "Myaa が 2020 年に制作したゲームの紹介です．"
 tags: ["NITMic", "2020", "ゲーム大賞"]

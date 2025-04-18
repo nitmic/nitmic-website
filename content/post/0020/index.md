@@ -1,7 +1,7 @@
 ---
 title: "NITMic のロゴをリニューアルしました"
 date: "2024-04-10"
-thumbnail: "img/padded-logo-short_dark.svg"
+thumbnail: "padded-logo-short_dark.svg"
 categories: ["記事"]
 tags: ["NITMic", "2024"]
 authors: ["fjktkm"]
@@ -20,7 +20,7 @@ OB・OG のみなさまにおかれましてはすこし寂しい思いをされ
 
 {{< load-photoswipe>}}
 {{< gallery >}}
-{{< figure link="img/padded-logo-short_light.svg" caption="NITMic のロゴ 1">}}
-{{< figure link="img/padded-logo-horizontal_light.svg" caption="NITMic のロゴ 2">}}
-{{< figure link="img/padded-logo-vertical_light.svg" caption="NITMic のロゴ 3">}}
+{{< figure link="padded-logo-short_light.svg" caption="NITMic のロゴ 1">}}
+{{< figure link="padded-logo-horizontal_light.svg" caption="NITMic のロゴ 2">}}
+{{< figure link="padded-logo-vertical_light.svg" caption="NITMic のロゴ 3">}}
 {{< /gallery >}}

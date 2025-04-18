@@ -1,7 +1,7 @@
 ---
 title: "NITMic vs. C0de ドッジボール交流戦"
 date: "2023-12-15"
-thumbnail: "img/ball2.jpg"
+thumbnail: "ball2.jpg"
 categories: ["記事"]
 tags: ["NITMic", "2024", "ドッジボール", "C0de"]
 authors: ["dokudami", "name", "Shiwasu"]
@@ -39,9 +39,9 @@ authors: ["dokudami", "name", "Shiwasu"]
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-    {{< figure link="img/ball2.jpg" caption="試合開始" >}}
-    {{< figure link="img/ball3.jpg" caption="ドッジボール" >}}
-    {{< figure link="img/ball1.jpg" caption="バスケ" >}}
+    {{< figure link="ball2.jpg" caption="試合開始" >}}
+    {{< figure link="ball3.jpg" caption="ドッジボール" >}}
+    {{< figure link="ball1.jpg" caption="バスケ" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->
 

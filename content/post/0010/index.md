@@ -2,7 +2,7 @@
 title: "新歓ポスター 2022"
 description: "新入生大歓迎です。"
 date: "2022-04-07"
-thumbnail: "img/kk.png"
+thumbnail: "kk.png"
 categories: ["作品紹介"]
 tags: ["2022", "新歓", "デザイナー", "新歓ポスター"]
 sidebar: "right"
@@ -25,14 +25,14 @@ NITMic では、毎年 2D デザイナーを中心に、新歓ポスターの作
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-    {{< figure link="img/kk.png" caption="kk作" a4="true">}}
-    {{< figure link="img/kuru.png" caption="kuru作" a4="true" >}}
-    {{< figure link="img/taichi.png" caption="たいち作" >}}
+    {{< figure link="kk.png" caption="kk作" a4="true">}}
+    {{< figure link="kuru.png" caption="kuru作" a4="true" >}}
+    {{< figure link="taichi.png" caption="たいち作" >}}
 {{< /gallery >}}
 {{< gallery >}}
-    {{< figure link="img/zyunsei.png" caption="ジュンセイ作" >}}
-    {{< figure link="img/poster_picture.png" caption="掲載されている様子(52号館前)">}}
-    {{< figure link="img/poster_picture_2.png" caption="掲載されている様子(課外活動棟)">}}
+    {{< figure link="zyunsei.png" caption="ジュンセイ作" >}}
+    {{< figure link="poster_picture.png" caption="掲載されている様子(52号館前)">}}
+    {{< figure link="poster_picture_2.png" caption="掲載されている様子(課外活動棟)">}}
 {{< /gallery >}}
 <!-- prettier-ignore-end -->
 

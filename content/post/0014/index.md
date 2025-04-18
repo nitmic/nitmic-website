@@ -1,7 +1,7 @@
 ---
 title: "NITMic ゲームセンター 2022"
 date: "2022-12-01"
-thumbnail: "img/koudaisai-2022-1.png"
+thumbnail: "koudaisai-2022-1.png"
 categories: ["記事"]
 description: "NITMic ゲームセンター 2022"
 tags: ["NITMic", "2022", "工大祭", "NITMic ゲームセンター"]
@@ -18,16 +18,16 @@ NITMic では例年、工大祭向けにゲームを作成し、学生企画に�
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/cygnus.png" caption="cygnus" >}}
-  {{< figure link="img/syuumatusanpo.png" caption="終末散歩" >}}
-  {{< figure link="img/mineandrun.png" caption="mine&run" >}}
+  {{< figure link="cygnus.png" caption="cygnus" >}}
+  {{< figure link="syuumatusanpo.png" caption="終末散歩" >}}
+  {{< figure link="mineandrun.png" caption="mine&run" >}}
 {{< /gallery>}}
 
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/syasouninzya.png" caption="車窓忍者" >}}
-  {{< figure link="img/glidegirl.png" caption="GlideGirl" >}}
-   {{< figure link="img/nitechracing.png" caption="nitechRacing" >}}
+  {{< figure link="syasouninzya.png" caption="車窓忍者" >}}
+  {{< figure link="glidegirl.png" caption="GlideGirl" >}}
+   {{< figure link="nitechracing.png" caption="nitechRacing" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->
 
@@ -39,8 +39,8 @@ NITMic では例年、工大祭向けにゲームを作成し、学生企画に�
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/koudaisai-2022-4.png" caption="NITMicゲームセンター" >}}
-  {{< figure link="img/koudaisai-2022-5.png" caption="スコアアタック" >}}
+  {{< figure link="koudaisai-2022-4.png" caption="NITMicゲームセンター" >}}
+  {{< figure link="koudaisai-2022-5.png" caption="スコアアタック" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->
 
@@ -53,8 +53,8 @@ NITMic では例年、工大祭向けにゲームを作成し、学生企画に�
 <!-- prettier-ignore-start -->
 {{< load-photoswipe>}}
 {{< gallery>}}
-  {{< figure link="img/koudaisai-2022-2.png" caption="部誌１" >}}
-  {{< figure link="img/koudaisai-2022-3.png" caption="部誌２" >}}
+  {{< figure link="koudaisai-2022-2.png" caption="部誌１" >}}
+  {{< figure link="koudaisai-2022-3.png" caption="部誌２" >}}
 {{< /gallery>}}
 <!-- prettier-ignore-end -->
 

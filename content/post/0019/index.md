@@ -1,7 +1,7 @@
 ---
 title: "新歓ポスター 2023"
 date: "2023-04-01"
-thumbnail: "img/poster/junsei.png"
+thumbnail: "junsei.png"
 categories: ["作品紹介"]
 tags: ["2023", "新歓", "デザイナー", "新歓ポスター"]
 authors: ["fjktkm", "dokudami", "ジュンセイ", "kuru", "Mass", "塩味"]
@@ -13,14 +13,14 @@ authors: ["fjktkm", "dokudami", "ジュンセイ", "kuru", "Mass", "塩味"]
 
 {{< load-photoswipe>}}
 {{< gallery >}}
-{{< figure link="img/poster/junsei.png" caption="ジュンセイ 作ポスター" a4="true">}}
-{{< figure link="img/poster/shioaji.jpeg" caption="塩味 作ポスター" a4="true">}}
-{{< figure link="img/poster/fjktkm1.jpg" caption="fjktkm 作ポスター 1" a4="true">}}
-{{< figure link="img/poster/fjktkm2.jpg" caption="fjktkm 作ポスター 2" a4="true">}}
-{{< figure link="img/poster/mass.png" caption="Mass 作ポスター" a4="true">}}
-{{< figure link="img/poster/dokudami.png" caption="dokudami 作ポスター" a4="true">}}
-{{< figure link="img/poster/kuru1.jpg" caption="kuru 作ポスター 1" a4="true">}}
-{{< figure link="img/poster/kuru2.jpg" caption="kuru 作ポスター 2" a4="true">}}
+{{< figure link="junsei.png" caption="ジュンセイ 作ポスター" a4="true">}}
+{{< figure link="shioaji.jpeg" caption="塩味 作ポスター" a4="true">}}
+{{< figure link="fjktkm1.jpg" caption="fjktkm 作ポスター 1" a4="true">}}
+{{< figure link="fjktkm2.jpg" caption="fjktkm 作ポスター 2" a4="true">}}
+{{< figure link="mass.png" caption="Mass 作ポスター" a4="true">}}
+{{< figure link="dokudami.png" caption="dokudami 作ポスター" a4="true">}}
+{{< figure link="kuru1.jpg" caption="kuru 作ポスター 1" a4="true">}}
+{{< figure link="kuru2.jpg" caption="kuru 作ポスター 2" a4="true">}}
 {{< /gallery >}}
 
 ポスターの一部は学内掲示板で公開していますので，ぜひご覧ください．
@@ -33,8 +33,8 @@ authors: ["fjktkm", "dokudami", "ジュンセイ", "kuru", "Mass", "塩味"]
 
 {{< load-photoswipe>}}
 {{< gallery >}}
-{{< figure link="img/flyer/dokudami.jpg" caption="dokudami 作ビラ" a4="true">}}
-{{< figure link="img/flyer/fjktkm.jpg" caption="fjktkm 作ビラ" a4="true">}}
+{{< figure link="dokudami.jpg" caption="dokudami 作ビラ" a4="true">}}
+{{< figure link="fjktkm.jpg" caption="fjktkm 作ビラ" a4="true">}}
 {{< /gallery >}}
 
 こちらも学内で配布しています．
