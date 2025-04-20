@@ -13,9 +13,11 @@
 
 	<figure class="{{ with $class }}{{ . }}__thumbnail {{ end }}thumbnail">
 		{{ if eq $class "list" }}<a class="thumbnail__link" href="{{ .page.RelPermalink }}">{{ end }}
-		{{ $img := .page.Resources.GetMatch $thumbnail }} <!-- Leaf Bundle対応 -->
-		{{ $src := $thumbnail | relURL }}
+
+		{{ $src := $thumbnail | relURL }}<!-- static の画像 -->
+		{{ $img := .page.Resources.GetMatch $thumbnail }}<!-- Leaf Bundle の画像 -->
 		{{ with $img }}{{ $src = .RelPermalink }}{{ end }}
+
 		<img class="thumbnail__image" src="{{ $src }}" alt="{{ .page.Title }}">
 		{{ if eq $class "list" }}</a>{{ end }}
 	</figure>
