@@ -6,6 +6,7 @@ thumbnail: "image_0.png"
 description: "SoundCloud 垢取得"
 tags: ["NITMic", "2022", "コンポーザー"]
 authors: ["Mass", "真言", "こーせー", "shenzel"]
+aliases: "0008"
 ---
 
 ### 概要

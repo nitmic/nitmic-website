@@ -5,6 +5,7 @@ thumbnail: "thumbnail.jpg"
 categories: ["記事"]
 tags: ["NITMic", "2023", "工大祭", "NITMic ゲームセンター"]
 authors: ["Mass"]
+aliases: "0022"
 ---
 
 2023 年 11 月 18 日 (土) ，11 月 19 日 (日) の 2 日間行われた大学祭にて，名古屋工業大学コンピュータ倶楽部 NITMic ゲームセンターとして企画展示を行いました．

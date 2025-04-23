@@ -6,6 +6,7 @@ categories: ["作品紹介"]
 tags: ["2024", "新歓", "デザイナー", "新歓ポスター"]
 authors: ["name", "fjktkm", "kk", "獺祭", "わたあめ", "ウナギ"]
 menu: "main"
+aliases: "0016"
 ---
 
 ## はじめに

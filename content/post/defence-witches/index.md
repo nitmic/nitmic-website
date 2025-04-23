@@ -6,6 +6,7 @@ categories: ["作品紹介"]
 description: "Myaa が 2019 年に制作したゲームの紹介です．"
 tags: ["NITMic", "2019"]
 authors: ["Myaa", "kiritannpo", "mono"]
+aliases: "0005"
 ---
 
 #### ゲームの紹介

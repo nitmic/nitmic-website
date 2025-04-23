@@ -5,6 +5,7 @@ thumbnail: "ball2.jpg"
 categories: ["記事"]
 tags: ["NITMic", "2024", "ドッジボール", "C0de"]
 authors: ["dokudami", "name", "Shiwasu"]
+aliases: "0015"
 ---
 
 ## 11 月某日

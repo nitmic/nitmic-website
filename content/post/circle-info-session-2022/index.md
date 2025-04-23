@@ -8,6 +8,7 @@ tags: ["2022", "新歓"]
 sidebar: "right"
 authors: ["dokudami"]
 menu: "false"
+aliases: "0011"
 ---
 
 こんにちは、2022NITMic 代表の [dokudami](http://nitmic.club.nitech.ac.jp/authors/dokudami/) です。

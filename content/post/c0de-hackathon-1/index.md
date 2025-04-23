@@ -15,6 +15,7 @@ authors:
     "Seirios",
     "ひいす",
   ]
+aliases: "0021"
 ---
 
 今回、第 1 回 C0de ハッカソン with ピクシブに参加しました．

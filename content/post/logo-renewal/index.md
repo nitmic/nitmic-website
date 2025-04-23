@@ -5,6 +5,7 @@ thumbnail: "padded-logo-short_dark.svg"
 categories: ["記事"]
 tags: ["NITMic", "2024"]
 authors: ["fjktkm"]
+aliases: "0020"
 ---
 
 このたび NITMic のロゴをリニューアルしました．

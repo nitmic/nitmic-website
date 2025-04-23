@@ -5,6 +5,7 @@ thumbnail: "booth_picture_upper.jpg"
 categories: ["記事"]
 tags: ["NITMic", "2023", "コンポーザー", "M3"]
 authors: ["shenzel", "kk", "ジュンセイ", "fjktkm", "Mass", "Thike", "Name"]
+aliases: "0024"
 ---
 
 2023 年 10 月 29 日（日）開催の M3 にて、NITMic としてサークル参加しました。東方アレンジ EP を作成し、頒布しました。当日はたくさんの方に CD を手に取っていただきました。

@@ -6,6 +6,7 @@ categories: ["作品紹介"]
 description: "Myaa が 2020 年に制作したゲームの紹介です．"
 tags: ["NITMic", "2020", "ゲーム大賞"]
 authors: ["Myaa", "Han", "kiritanpo", "nerune", "mono", "dotsome"]
+aliases: "0007"
 ---
 
 ### ゲーム紹介

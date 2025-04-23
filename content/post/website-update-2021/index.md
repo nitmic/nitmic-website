@@ -8,6 +8,7 @@ tags: ["2021", "HUGO", "公式 Web サイト"]
 sidebar: "right"
 authors: ["dokudami"]
 menu: "false"
+aliases: "0001"
 ---
 
 幣学では、本日で春休みが終了し、前期授業が始まろうとしています。

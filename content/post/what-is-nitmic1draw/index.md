@@ -8,6 +8,7 @@ tags: ["2021", "デザイナー", "イラスト"]
 sidebar: "right"
 authors: ["dokudami"]
 menu: "false"
+aliases: "0002"
 ---
 
 NITMic では、2020 年冬から [#nitmic1draw](https://x.com/search?q=%23nitmic1draw&src=hashtag_click&f=live) というワンドロ企画を定期的に行っています。

@@ -6,6 +6,7 @@ categories: ["記事"]
 description: "技育博 2022"
 tags: ["NITMic", "2022"]
 authors: ["dokudami", "Mass"]
+aliases: "0013"
 ---
 
 6 月某日、我々は名古屋駅を旅立ち、東京品川へ向かっていた。

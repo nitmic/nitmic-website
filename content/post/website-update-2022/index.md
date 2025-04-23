@@ -7,6 +7,7 @@ tags: ["2022", "HUGO", "公式 Web サイト"]
 sidebar: "right"
 authors: ["tamaki", "dokudami"]
 menu: "false"
+aliases: "0009"
 ---
 
 皆様いかがお過ごしでしょうか？

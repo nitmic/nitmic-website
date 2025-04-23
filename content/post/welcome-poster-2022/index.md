@@ -7,6 +7,7 @@ categories: ["作品紹介"]
 tags: ["2022", "新歓", "デザイナー", "新歓ポスター"]
 sidebar: "right"
 authors: ["tamaki", "たいち", "kk", "kuru", "ジュンセイ"]
+aliases: "0010"
 ---
 
 #### 祝ご入学

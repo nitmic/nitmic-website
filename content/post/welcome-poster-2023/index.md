@@ -5,6 +5,7 @@ thumbnail: "poster/junsei.png"
 categories: ["作品紹介"]
 tags: ["2023", "新歓", "デザイナー", "新歓ポスター"]
 authors: ["fjktkm", "dokudami", "ジュンセイ", "kuru", "Mass", "塩味"]
+aliases: "0019"
 ---
 
 ## 新歓ポスター

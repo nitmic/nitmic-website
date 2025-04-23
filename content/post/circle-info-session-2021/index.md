@@ -5,6 +5,7 @@ categories: ["記事"]
 description: "NITMic オンライン説明会をしました！"
 tags: ["NITMic", "2021", "新歓"]
 authors: ["アルエット"]
+aliases: "0003"
 ---
 
 さて、4 月も後半。

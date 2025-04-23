@@ -6,6 +6,7 @@ categories: ["作品紹介"]
 description: "NITMic の広報用のロールアップバナーを制作しました！"
 tags: ["NITMic", "2024", "工大祭"]
 authors: ["fjktkm", "Oru", "kk"]
+aliases: "0018"
 ---
 
 NITMic の広報用のロールアップバナーを制作し，2024 年 11 月 16 日（土）～ 17 日（日）の 2 日間行われた工大祭において展示しました．
