@@ -6,7 +6,7 @@ categories: ["作品紹介"]
 description: "NITMic の部誌 Archives 2023 を発行しました！"
 tags: ["NITMic", "2023", "工大祭", "部誌"]
 authors: ["fjktkm"]
-aliases: "/post/0017"
+aliases: "0017"
 ---
 
 2023 年 11 月 18 日（土）～ 19 日（日）の 2 日間行われた工大祭において，名古屋工業大学コンピュータ倶楽部誌 Archives 2023 を頒布しました．
