@@ -10,19 +10,21 @@
 
 {{ range .Site.Data.member }}
 
+{{ $visibleMembers := where .Members "visible" true }}
+
+{{ if gt (len $visibleMembers) 0 }}
 {{ with .Year }}
 <h4>{{ . }}入学</h4>
 {{ end }}
 
 <div class="cards">
-    {{ range .Members }}
-    {{ if .visible }}
+    {{ range $visibleMembers }}
     {{ partial "member.html" . }}
-    {{ end }}
     {{ end }}
 </div>
 
 <br>
+{{ end }}
 
 {{ end }}
 
