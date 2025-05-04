@@ -9,7 +9,7 @@ weight: "2"
 
 NITMic に興味を持っていただきありがとうございます。
 
-入部は、 Google フォームから受け付けております。
+入部は、Google フォームから受け付けております。
 
 > [➡NITMic 入部 Google フォーム](https://forms.gle/rTbMbkDtf9iy91vr5)
 
