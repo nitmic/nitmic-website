@@ -1,7 +1,7 @@
 ---
 title: "Cygnus"
 date: "2022-12-01"
-thumbnail: "images/post/0012/ominopolis0.png"
+thumbnail: "cygnus_title.png"
 categories: ["作品紹介"]
 description: "Massが制作したゲームの紹介です"
 tags: ["NITMic", "2022"]
