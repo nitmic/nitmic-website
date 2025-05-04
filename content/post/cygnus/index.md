@@ -42,7 +42,7 @@ Mass が 2022 年度に制作したリズムゲームです．
 
 Direction / Production: Mass
 Programming: hydriod, kuru, Mass
-Visual Design / Direction: 未底
+Visual Design / Direction: fjktkm
 Character Design: 小野懊悩
 Illustration: たいち, kk, ジュンセイ
 Visual Effect Edit: 塩味
