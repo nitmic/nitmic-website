@@ -85,10 +85,10 @@ NITMic 公式サイトは、大学の提供する [課外活動用ウェブサ�
 
 ### 自動デプロイの設定
 
-NITMic 公式サイトは `main` ブランチが Push される度に自動でデプロイされるように設定されています。
+NITMic 公式サイトは `main` ブランチが更新される度に自動でデプロイされるように設定されています。
 具体的には、GitHub Actions により次のような流れでデプロイが行われます：
 
-1. `main` ブランチが Push される
+1. `main` ブランチが更新される
 2. Build ワークフローにより GitHub Hosted Runner でビルド結果を含む Release を作成する
 3. Deploy ワークフローにより Self Hosted Runner で最新の Release に含まれるビルド結果をホスティングサーバーにデプロイする
 4. Disk Space Alert ワークフローによりサーバーのディスク容量を確認する
